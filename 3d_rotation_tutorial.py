@@ -36,12 +36,12 @@ def MATHSUB(math):
         r"\pwrap{#1}": r"\left(#1\right)",
         r"\bwrap{#1}": r"\left[#1\right]",
         r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",
-        r"\colorX{#1}" : r"\textcolor{#FF0000}{#1}",
-        r"\colorY{#1}" : r"\textcolor{#00FF00}{#1}",
-        r"\colorZ{#1}" : r"\textcolor{#007FFF}{#1}",
-        r"\colorU{#1}" : r"\textcolor{#00FF7F}{#1}",
-        r"\colorV{#1}" : r"\textcolor{#FF00FF}{#1}",
-        r"\colorW{#1}" : r"\textcolor{#FFFF00}{#1}",
+        r"\colorX{#1}" : r"\textcolor{red}{#1}", # #FF0000
+        r"\colorY{#1}" : r"\textcolor{green}{#1}", # #00FF00
+        r"\colorZ{#1}" : r"\textcolor{cyan}{#1}", # #007FFF
+        r"\colorU{#1}" : r"\textcolor{magenta}{#1}", # #00FF7F
+        r"\colorV{#1}" : r"\textcolor{orange}{#1}", # #FF00FF
+        r"\colorW{#1}" : r"\textcolor{yellow}{#1}", # #FFFF00
     }
 
     def bs_fltr(s):
@@ -560,7 +560,7 @@ Notice how the resulting sum in the parenthesis is a coordinate! Despite this, i
 
 text += LANGUAGE_TABLE(
     math=MULTILINE(r"""
-$$\vec{X} = \colorX{\hat{x}}\cdot x + \colorY{\hat{y}}\cdot y + \colorZ{\hat{z}}\cdot z$$
+$$\vec{X} = \colorX{\hat{x}}\cdot \colorX{x} + \colorY{\hat{y}}\cdot \colorY{y} + \colorZ{\hat{z}}\cdot \colorZ{z}$$
 $$\vec{X} = \mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\mat{\colorX{x}\\\colorY{y}\\\colorZ{z}}$$
 $$\mat{\colorX{x}\\\colorY{y}\\\colorZ{z}} = 
     \mat{\colorU{u}_{\colorX{x}}\\\colorU{u}_{\colorY{y}}\\\colorU{u}_{\colorZ{z}}}\colorU{a} + 

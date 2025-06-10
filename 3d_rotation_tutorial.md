@@ -393,8 +393,8 @@ Those *constant* objects are the "standard" basis vectors for Euclidean space, w
 <tr>
 <td>
 
-$$\vec{X} = \begin{bmatrix}x\\y\\z\end{bmatrix} = \textcolor{#FF0000}{\begin{bmatrix}1\\0\\0\end{bmatrix}} x + \textcolor{#00FF00}{\begin{bmatrix}0\\1\\0\end{bmatrix}} y + \textcolor{#007FFF}{\begin{bmatrix}0\\0\\1\end{bmatrix}} z$$
-$$\vec{X} = \textcolor{#FF0000}{\hat{x}}\cdot x + \textcolor{#00FF00}{\hat{y}}\cdot y + \textcolor{#007FFF}{\hat{z}}\cdot z$$
+$$\vec{X} = \begin{bmatrix}x\\y\\z\end{bmatrix} = \textcolor{red}{\begin{bmatrix}1\\0\\0\end{bmatrix}} x + \textcolor{green}{\begin{bmatrix}0\\1\\0\end{bmatrix}} y + \textcolor{cyan}{\begin{bmatrix}0\\0\\1\end{bmatrix}} z$$
+$$\vec{X} = \textcolor{red}{\hat{x}}\cdot x + \textcolor{green}{\hat{y}}\cdot y + \textcolor{cyan}{\hat{z}}\cdot z$$
 
 </td>
 <td>
@@ -450,8 +450,8 @@ If you're familiar with shaders, you've likely come across the dot product.  Tak
 <tr>
 <td>
 
-$$\vec{X} = \textcolor{#FF0000}{\hat{x}}\cdot x + \textcolor{#00FF00}{\hat{y}}\cdot y + \textcolor{#007FFF}{\hat{z}}\cdot z$$
-$$\vec{X} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FF0000}{x}\\\textcolor{#00FF00}{y}\\\textcolor{#007FFF}{z}\end{bmatrix}$$
+$$\vec{X} = \textcolor{red}{\hat{x}}\cdot x + \textcolor{green}{\hat{y}}\cdot y + \textcolor{cyan}{\hat{z}}\cdot z$$
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix}$$
 
 </td>
 <td>
@@ -530,60 +530,60 @@ Assert(xHat*x + yHat*y + zHat*z == dot3(Basis, X));
 
 That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!
 
-$$\vec{X} = \textcolor{#00FF7F}{\hat{u}\cdot a} + \textcolor{#FF00FF}{\hat{v}\cdot b} + \textcolor{#FFFF00}{\hat{w}\cdot c}$$
+$$\vec{X} = \textcolor{magenta}{\hat{u}\cdot a} + \textcolor{orange}{\hat{v}\cdot b} + \textcolor{yellow}{\hat{w}\cdot c}$$
 
 (Please excuse only having math notation here, I'm at a loss of how to show this with code without skipping to the end)
 
 Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:
 
-$$\vec{X} = \left(\textcolor{#00FF7F}{\hat{u}}\right)\textcolor{#00FF7F}{a} + \left(\textcolor{#FF00FF}{\hat{v}}\right)\textcolor{#FF00FF}{b} + \left(\textcolor{#FFFF00}{\hat{w}}\right)\textcolor{#FFFF00}{c}$$
+$$\vec{X} = \left(\textcolor{magenta}{\hat{u}}\right)\textcolor{magenta}{a} + \left(\textcolor{orange}{\hat{v}}\right)\textcolor{orange}{b} + \left(\textcolor{yellow}{\hat{w}}\right)\textcolor{yellow}{c}$$
 
 $$\begin{align*}
 
-    \textcolor{#00FF7F}{\hat{u}} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}\\\textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}\\\textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}\end{bmatrix}
+    \textcolor{magenta}{\hat{u}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}
 &\quad&
-    \textcolor{#FF00FF}{\hat{v}} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}\\\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}\\\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}\end{bmatrix}
+    \textcolor{orange}{\hat{v}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}
 &\quad&
-    \textcolor{#FFFF00}{\hat{w}} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}\end{bmatrix}
+    \textcolor{yellow}{\hat{w}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
 
 \end{align*}$$
 
 $$\vec{X} = 
-    \left(\begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}\\\textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}\\\textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}\end{bmatrix}\right)\textcolor{#00FF7F}{a} + 
+    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{magenta}{a} + 
 
-    \left(\begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}\\\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}\\\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}\end{bmatrix}\right)\textcolor{#FF00FF}{b} + 
+    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{orange}{b} + 
 
-    \left(\begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}\end{bmatrix}\right)\textcolor{#FFFF00}{c}$$
+    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{yellow}{c}$$
 
-Since the coordinate $\textcolor{#00FF7F}{a}, \textcolor{#FF00FF}{b}, \textcolor{#FFFF00}{c}$ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
+Since the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
 
-$$\vec{X} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\left(
-    \begin{bmatrix}\textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}\\\textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}\\\textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#00FF7F}{a} + 
-    \begin{bmatrix}\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}\\\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}\\\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#FF00FF}{b} + 
-    \begin{bmatrix}\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#FFFF00}{c}
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\left(
+    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{magenta}{a} + 
+    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{orange}{b} + 
+    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{yellow}{c}
 \right)$$
 
-Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate $\textcolor{#00FF7F}{a}, \textcolor{#FF00FF}{b}, \textcolor{#FFFF00}{c}$ becoming a column vector like $\textcolor{#FF0000}{x}, \textcolor{#00FF00}{y}, \textcolor{#007FFF}{z}$, then we find the familiar face of a Matrix!<table align="center">
+Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ becoming a column vector like $\textcolor{red}{x}, \textcolor{green}{y}, \textcolor{cyan}{z}$, then we find the familiar face of a Matrix!<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
 
-$$\vec{X} = \textcolor{#FF0000}{\hat{x}}\cdot x + \textcolor{#00FF00}{\hat{y}}\cdot y + \textcolor{#007FFF}{\hat{z}}\cdot z$$
-$$\vec{X} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{#FF0000}{x}\\\textcolor{#00FF00}{y}\\\textcolor{#007FFF}{z}\end{bmatrix}$$
-$$\begin{bmatrix}\textcolor{#FF0000}{x}\\\textcolor{#00FF00}{y}\\\textcolor{#007FFF}{z}\end{bmatrix} = 
-    \begin{bmatrix}\textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}\\\textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}\\\textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#00FF7F}{a} + 
-    \begin{bmatrix}\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}\\\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}\\\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#FF00FF}{b} + 
-    \begin{bmatrix}\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}\end{bmatrix}\textcolor{#FFFF00}{c}$$
-$$\begin{bmatrix}\textcolor{#FF0000}{x}\\\textcolor{#00FF00}{y}\\\textcolor{#007FFF}{z}\end{bmatrix} = \begin{bmatrix}
-    \begin{bmatrix}\textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}\\\textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}\\\textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}\end{bmatrix} &  
-    \begin{bmatrix}\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}\\\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}\\\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}\end{bmatrix} &
-    \begin{bmatrix}\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}\end{bmatrix}
-\end{bmatrix}\begin{bmatrix}\textcolor{#00FF7F}{a}\\\textcolor{#FF00FF}{b}\\\textcolor{#FFFF00}{c}\end{bmatrix}$$
-$$\vec{X} = \begin{bmatrix}\textcolor{#FF0000}{\hat{x}}&\textcolor{#00FF00}{\hat{y}}&\textcolor{#007FFF}{\hat{z}}\end{bmatrix}\begin{bmatrix}
-    \textcolor{#00FF7F}{u}_{\textcolor{#FF0000}{x}}&\textcolor{#FF00FF}{v}_{\textcolor{#FF0000}{x}}&\textcolor{#FFFF00}{w}_{\textcolor{#FF0000}{x}}\\
-    \textcolor{#00FF7F}{u}_{\textcolor{#00FF00}{y}}&\textcolor{#FF00FF}{v}_{\textcolor{#00FF00}{y}}&\textcolor{#FFFF00}{w}_{\textcolor{#00FF00}{y}}\\
-    \textcolor{#00FF7F}{u}_{\textcolor{#007FFF}{z}}&\textcolor{#FF00FF}{v}_{\textcolor{#007FFF}{z}}&\textcolor{#FFFF00}{w}_{\textcolor{#007FFF}{z}}
-\end{bmatrix}\begin{bmatrix}\textcolor{#00FF7F}{a}\\\textcolor{#FF00FF}{b}\\\textcolor{#FFFF00}{c}\end{bmatrix}$$
+$$\vec{X} = \textcolor{red}{\hat{x}}\cdot \textcolor{red}{x} + \textcolor{green}{\hat{y}}\cdot \textcolor{green}{y} + \textcolor{cyan}{\hat{z}}\cdot \textcolor{cyan}{z}$$
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix}$$
+$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} = 
+    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{magenta}{a} + 
+    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{orange}{b} + 
+    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{yellow}{c}$$
+$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} = \begin{bmatrix}
+    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix} &  
+    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix} &
+    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
+\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}
+    \textcolor{magenta}{u}_{\textcolor{red}{x}}&\textcolor{orange}{v}_{\textcolor{red}{x}}&\textcolor{yellow}{w}_{\textcolor{red}{x}}\\
+    \textcolor{magenta}{u}_{\textcolor{green}{y}}&\textcolor{orange}{v}_{\textcolor{green}{y}}&\textcolor{yellow}{w}_{\textcolor{green}{y}}\\
+    \textcolor{magenta}{u}_{\textcolor{cyan}{z}}&\textcolor{orange}{v}_{\textcolor{cyan}{z}}&\textcolor{yellow}{w}_{\textcolor{cyan}{z}}
+\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
 
 </td>
 <td>
