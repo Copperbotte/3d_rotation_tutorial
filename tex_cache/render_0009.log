@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,6 +199,202 @@ Preview: PDFoutput 1
 \makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks26
 )
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.6 $$\vec{X} = \textcolor{#f59789}{\hat{x}}
+                                            \cdot x + \textcolor{#7dc98c}{\h...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 $$\vec{X} = \textcolor{#f59789}{\hat{x}}
+                                            \cdot x + \textcolor{#7dc98c}{\h...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.6 ...t{x}}\cdot x + \textcolor{#7dc98c}{\hat{y}}
+                                                  \cdot y + \textcolor{#96b1...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...t{x}}\cdot x + \textcolor{#7dc98c}{\hat{y}}
+                                                  \cdot y + \textcolor{#96b1...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.6 ...t{y}}\cdot y + \textcolor{#96b1fe}{\hat{z}}
+                                                  \cdot z$$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...t{y}}\cdot y + \textcolor{#96b1fe}{\hat{z}}
+                                                  \cdot z$$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.7 ...\begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...\begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.7 ...9789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...9789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.7 ...c98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...c98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.7 ...atrix}\begin{bmatrix}\textcolor{#f59789}{x}
+                                                  \\\textcolor{#7dc98c}{y}\\...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...atrix}\begin{bmatrix}\textcolor{#f59789}{x}
+                                                  \\\textcolor{#7dc98c}{y}\\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.7 ...xtcolor{#f59789}{x}\\\textcolor{#7dc98c}{y}
+                                                  \\\textcolor{#96b1fe}{z}\e...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...xtcolor{#f59789}{x}\\\textcolor{#7dc98c}{y}
+                                                  \\\textcolor{#96b1fe}{z}\e...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.7 ...xtcolor{#7dc98c}{y}\\\textcolor{#96b1fe}{z}
+                                                  \end{bmatrix}$$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...xtcolor{#7dc98c}{y}\\\textcolor{#96b1fe}{z}
+                                                  \end{bmatrix}$$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Preview: Tightpage 0 0 0 0
 [1{C:/Users/Joe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation_tutorial\tex_cach
@@ -209,20 +405,20 @@ L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2837 strings out of 473535
- 45033 string characters out of 5715903
+ 2840 strings out of 473535
+ 45078 string characters out of 5715903
  439411 words of memory out of 5000000
- 26060 multiletter control sequences out of 15000+600000
+ 26063 multiletter control sequences out of 15000+600000
  559291 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,71p,272b,171s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,71p,290b,176s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 ex10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmmi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmr10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
 Output written on "D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation
-_tutorial\tex_cache\render_0009.pdf" (1 page, 37009 bytes).
+_tutorial\tex_cache\render_0009.pdf" (1 page, 36974 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

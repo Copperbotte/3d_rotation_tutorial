@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,6 +199,137 @@ Preview: PDFoutput 1
 \makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks26
 )
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 $$\vec{X} = \left(\textcolor{#d2b057}{\hat{u}}
+                                                  \right)\textcolor{#d2b057}...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 $$\vec{X} = \left(\textcolor{#d2b057}{\hat{u}}
+                                                  \right)\textcolor{#d2b057}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 ...b057}{\hat{u}}\right)\textcolor{#d2b057}{a}
+                                                   + \left(\textcolor{#43c8d...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...b057}{\hat{u}}\right)\textcolor{#d2b057}{a}
+                                                   + \left(\textcolor{#43c8d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.6 ...57}{a} + \left(\textcolor{#43c8dc}{\hat{v}}
+                                                  \right)\textcolor{#43c8dc}...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...57}{a} + \left(\textcolor{#43c8dc}{\hat{v}}
+                                                  \right)\textcolor{#43c8dc}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.6 ...c8dc}{\hat{v}}\right)\textcolor{#43c8dc}{b}
+                                                   + \left(\textcolor{#dd99d...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...c8dc}{\hat{v}}\right)\textcolor{#43c8dc}{b}
+                                                   + \left(\textcolor{#dd99d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 ...dc}{b} + \left(\textcolor{#dd99d8}{\hat{w}}
+                                                  \right)\textcolor{#dd99d8}...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...dc}{b} + \left(\textcolor{#dd99d8}{\hat{w}}
+                                                  \right)\textcolor{#dd99d8}...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 ...99d8}{\hat{w}}\right)\textcolor{#dd99d8}{c}
+                                                  $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...99d8}{\hat{w}}\right)\textcolor{#dd99d8}{c}
+                                                  $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
@@ -212,32 +343,934 @@ l.13 \end{align*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Preview: Tightpage 0 0 0 0
-[1{C:/Users/Joe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation_tutorial\tex_cach
-e\render_0011.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
- ***********
- ) 
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.13 \end{align*}
+                 $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{align*}
+                 $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.15 ...begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.15 ...789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.15 ...98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.15 ...trix}\begin{bmatrix}\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#f59789}{x}}\...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...trix}\begin{bmatrix}\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#f59789}{x}}\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#f59789}{x}
+                                                  }\\\textcolor{#d2b057}{u}_...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#f59789}{x}
+                                                  }\\\textcolor{#d2b057}{u}_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.15 ...color{#f59789}{x}}\\\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#7dc98c}{y}}\...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...color{#f59789}{x}}\\\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#7dc98c}{y}}\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#7dc98c}{y}
+                                                  }\\\textcolor{#d2b057}{u}_...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#7dc98c}{y}
+                                                  }\\\textcolor{#d2b057}{u}_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.15 ...color{#7dc98c}{y}}\\\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#96b1fe}{z}}\...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...color{#7dc98c}{y}}\\\textcolor{#d2b057}{u}
+                                                  _{\textcolor{#96b1fe}{z}}\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#96b1fe}{z}
+                                                  }\end{bmatrix}\right)\text...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...tcolor{#d2b057}{u}_{\textcolor{#96b1fe}{z}
+                                                  }\end{bmatrix}\right)\text...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.15 ...\end{bmatrix}\right)\textcolor{#d2b057}{a}
+                                                   +
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...\end{bmatrix}\right)\textcolor{#d2b057}{a}
+                                                   +
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   f
+l.16 ...begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##f59789'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...begin{bmatrix}\textcolor{#f59789}{\hat{x}}
+                                                  &\textcolor{#7dc98c}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   7
+l.16 ...789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##7dc98c'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...789}{\hat{x}}&\textcolor{#7dc98c}{\hat{y}}
+                                                  &\textcolor{#96b1fe}{\hat{...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   9
+l.16 ...98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##96b1fe'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...98c}{\hat{y}}&\textcolor{#96b1fe}{\hat{z}}
+                                                  \end{bmatrix}\begin{bmatri...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.16 ...trix}\begin{bmatrix}\textcolor{#43c8dc}{v}
+                                                  _{\textcolor{#f59789}{x}}\...
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
  2839 strings out of 473535
- 45091 string characters out of 5715903
- 450411 words of memory out of 5000000
- 26062 multiletter control sequences out of 15000+600000
+ 44826 string characters out of 5715903
+ 442420 words of memory out of 5000000
+ 26066 multiletter control sequences out of 15000+600000
  559291 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,16n,71p,370b,234s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb>
-Output written on "D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation
-_tutorial\tex_cache\render_0011.pdf" (1 page, 40140 bytes).
-PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57i,16n,71p,388b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -612,7 +612,7 @@ Now here's the kicker: Those new basis vectors are *still vectors,* so they're l
 
 </div>
 
-Since the coordinate <img src="./tex_cache/render_0012.svg" style="vertical-align: middle; display: inline-block;"/> are all floats, we can group them with each <img src="./tex_cache/render_0013.svg" style="vertical-align: middle; display: inline-block;"/> basis vector. And since all the XYZ basis vectors are the same, we can rearrange the terms of the dot products to find this:
+Since the coordinate <img src="./tex_cache/render_0012.svg" style="vertical-align: middle; display: inline-block;"/> are all floats, we can group them with each of <img src="./tex_cache/render_0013.svg" style="vertical-align: middle; display: inline-block;"/> coordinates. And since all the XYZ basis vectors are the same, we can rearrange the terms of the dot products to find this:
     
 <div align="center"> 
 

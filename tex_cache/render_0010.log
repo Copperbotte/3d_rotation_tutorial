@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,6 +199,71 @@ Preview: PDFoutput 1
 \makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks26
 )
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 ...ec{X} = \textcolor{#d2b057}{\hat{u}\cdot a}
+                                                   + \textcolor{#43c8dc}{\ha...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##d2b057'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...ec{X} = \textcolor{#d2b057}{\hat{u}\cdot a}
+                                                   + \textcolor{#43c8dc}{\ha...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   4
+l.6 ...ot a} + \textcolor{#43c8dc}{\hat{v}\cdot b}
+                                                   + \textcolor{#dd99d8}{\ha...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##43c8dc'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...ot a} + \textcolor{#43c8dc}{\hat{v}\cdot b}
+                                                   + \textcolor{#dd99d8}{\ha...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \XC@@tmp.
+<to be read again> 
+                   d
+l.6 ...ot b} + \textcolor{#dd99d8}{\hat{w}\cdot c}
+                                                  $$
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+! Package xcolor Error: Undefined color `##dd99d8'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...ot b} + \textcolor{#dd99d8}{\hat{w}\cdot c}
+                                                  $$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Preview: Tightpage 0 0 0 0
 [1{C:/Users/Joe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation_tutorial\tex_cach
@@ -209,19 +274,19 @@ L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2835 strings out of 473535
- 44975 string characters out of 5715903
+ 2838 strings out of 473535
+ 45020 string characters out of 5715903
  438411 words of memory out of 5000000
- 26058 multiletter control sequences out of 15000+600000
+ 26061 multiletter control sequences out of 15000+600000
  559291 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,4n,71p,235b,103s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,4n,71p,235b,108s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 mi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmr10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
 Output written on "D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation
-_tutorial\tex_cache\render_0010.pdf" (1 page, 28611 bytes).
+_tutorial\tex_cache\render_0010.pdf" (1 page, 28579 bytes).
 PDF statistics:
  21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

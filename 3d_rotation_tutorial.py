@@ -73,7 +73,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     with open(tex, 'w') as o:
         o.write(TEX_OUTPUT)
     
-    if False:
+    if True:
 
         if True:
             Call(cmd1, silence=True)
@@ -211,13 +211,13 @@ def MATHSUB(math):
     commands = {
         r"\pwrap{#1}": r"\left(#1\right)",
         r"\bwrap{#1}": r"\left[#1\right]",
-        r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",
-        r"\colorX{#1}" : r"\textcolor{red}{#1}", # #FF0000
-        r"\colorY{#1}" : r"\textcolor{green}{#1}", # #00FF00
-        r"\colorZ{#1}" : r"\textcolor{cyan}{#1}", # #007FFF
-        r"\colorU{#1}" : r"\textcolor{magenta}{#1}", # #00FF7F
-        r"\colorV{#1}" : r"\textcolor{orange}{#1}", # #FF00FF
-        r"\colorW{#1}" : r"\textcolor{yellow}{#1}", # #FFFF00
+        r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",    # Colors used in my demo, oklab max saturation colors, default colors
+        r"\colorX{#1}" : r"\textcolor{#f59789}{#1}",        # #FF0000, #f59789, red
+        r"\colorY{#1}" : r"\textcolor{#7dc98c}{#1}",        # #00FF00, #7dc98c, green
+        r"\colorZ{#1}" : r"\textcolor{#96b1fe}{#1}",        # #007FFF, #96b1fe, cyan  
+        r"\colorU{#1}" : r"\textcolor{#d2b057}{#1}",        # #00FF7F, #d2b057, magenta
+        r"\colorV{#1}" : r"\textcolor{#43c8dc}{#1}",        # #FF00FF, #43c8dc, orange
+        r"\colorW{#1}" : r"\textcolor{#dd99d8}{#1}",        # #FFFF00, #dd99d8, yellow
     }
 
     def bs_fltr(s):
@@ -723,7 +723,7 @@ $$\vec{X} =
 """))
 
 text += MULTILINE("""
-Since the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ are all floats, we can group them with each """+ SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{\hat{u}}, \colorV{\hat{v}}, \colorW{\hat{w}}}$"), scale=1.0, inline=True) + """ basis vector. And since all the XYZ basis vectors are the same, we can rearrange the terms of the dot products to find this:
+Since the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ are all floats, we can group them with each of """+ SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{\hat{u}}, \colorV{\hat{v}}, \colorW{\hat{w}}}$"), scale=1.0, inline=True) + """ coordinates. And since all the XYZ basis vectors are the same, we can rearrange the terms of the dot products to find this:
 """)
 
 text += SVG_FROM_TEX(MATHSUB(r"""
