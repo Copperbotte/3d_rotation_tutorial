@@ -78,7 +78,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         #print('#'*80)
         #Call(cmd2, silence=True)
         #print('#'*80)
-        Call(cmd3, silence=True)
+        #Call(cmd3, silence=True)
         #print('#'*80)
         #Call(cmd4, silence=True)
 
@@ -138,12 +138,12 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
             svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
 
 
-        lite_colorX = "#c3766a"
-        lite_colorY = "#5b9a68"
-        lite_colorZ = "#6c81c0"
-        lite_colorU = "#a4883e"
-        lite_colorV = "#2397a7"
-        lite_colorW = "#a36b9f"
+        lite_colorX = "#f49586"
+        lite_colorY = "#73c182"
+        lite_colorZ = "#87a1ef"
+        lite_colorU = "#cdab4e"
+        lite_colorV = "#2abcd0"
+        lite_colorW = "#ca86c6"
 
         dark_colorX = "#f9a598"
         dark_colorY = "#87c993"
