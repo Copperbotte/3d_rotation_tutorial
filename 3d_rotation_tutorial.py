@@ -259,7 +259,7 @@ def MATHSUB(math):
             break
 
 def MULTILINE(multiline_string):
-    return multiline_string.strip()
+    return '\n\n%s\n\n'%multiline_string.strip()
 
 def LANGUAGE_TABLE(math="", cpp="", csharp="", python=""):
 
