@@ -5,8 +5,6 @@
 #     This script builds the given markdown file with functional tables, as
 # opposed to the expected human readable .md file.
 
-<<<<<<< HEAD
-=======
 import subprocess as sp
 # Prints a line ran through a subprocess how you expect it to work!
 def Call(command, getlines=False, silence=False):
@@ -75,9 +73,9 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     with open(tex, 'w') as o:
         o.write(TEX_OUTPUT)
     
-    if False:
+    if True:
 
-        if False:
+        if True:
             Call(cmd1, silence=True)
             print('#'*80)
             Call(cmd2, silence=True)
@@ -176,7 +174,6 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         result = f'![{svg}]({svg})'
     return result
 
->>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
 dst = "./3d_rotation_tutorial.md"
 
 # This function supplies definitions for various latex helpers.
@@ -258,6 +255,9 @@ def MULTILINE(multiline_string):
     return multiline_string.strip()
 
 def LANGUAGE_TABLE(math="", cpp="", csharp="", python=""):
+
+    math = SVG_FROM_TEX(MATHSUB(math), scale=1.25)
+
     return MULTILINE(r"""
 <table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
@@ -294,7 +294,7 @@ def LANGUAGE_TABLE(math="", cpp="", csharp="", python=""):
 </td>
 </tr>
 </table>
-"""%(MATHSUB(math), csharp, python, cpp)) + '\n\n'
+"""%(math, csharp, python, cpp)) + '\n\n'
 
 text = ""
 
@@ -563,11 +563,14 @@ assert All(
 """)
 )
 
-text += MULTILINE(r"""
-![](basis.png "Basis Vectors")
-[Source: Wikipedia.org (Retrieved 2025 July 09)](https://commons.wikimedia.org/wiki/File:3D_Vector.svg)
+text += MULTILINE("""
+<div align="center">
+<img src=basis.png height="256px"/>
 
-Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a $\hat{\text{hat}}$ notation:
+[Source: Wikipedia.org (Retrieved 2025 July 09)](https://commons.wikimedia.org/wiki/File:3D_Vector.svg)
+</div>
+
+Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a """ + SVG_FROM_TEX(MATHSUB(r"$\hat{\text{hat}}$"), scale=1, inline=True) + """ notation:
 """)
 text += LANGUAGE_TABLE(
     math=MULTILINE(r"""
@@ -675,11 +678,11 @@ text += MULTILINE("""
 That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!
 """)
 
-text += MATHSUB(r"""
+text += SVG_FROM_TEX(MATHSUB(r"""
 
 $$\vec{X} = \colorU{\hat{u}\cdot a} + \colorV{\hat{v}\cdot b} + \colorW{\hat{w}\cdot c}$$
 
-""")
+"""))
 
 # $$\vec{X} = \mat{\colorU{\hat{u}}&\colorV{\hat{v}}&\colorW{\hat{w}}}\mat{\colorU{u}\\\colorV{v}\\\colorW{w}}$$
 
@@ -689,7 +692,7 @@ text += MULTILINE("""
 Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:
 """)
 
-text += MATHSUB(r"""
+text += SVG_FROM_TEX(MATHSUB(r"""
 
 $$\vec{X} = \pwrap{\colorU{\hat{u}}}\colorU{a} + \pwrap{\colorV{\hat{v}}}\colorV{b} + \pwrap{\colorW{\hat{w}}}\colorW{c}$$
 
@@ -710,13 +713,13 @@ $$\vec{X} =
 
     \pwrap{\mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\mat{\colorW{w}_{\colorX{x}}\\\colorW{w}_{\colorY{y}}\\\colorW{w}_{\colorZ{z}}}}\colorW{c}$$
 
-""")
-
-text += MULTILINE(MATHSUB(r"""
-Since the coordinate $\colorU{a}, \colorV{b}, \colorW{c}$ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
 """))
 
-text += MATHSUB(r"""
+text += MULTILINE("""
+Since the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
+""")
+
+text += SVG_FROM_TEX(MATHSUB(r"""
 
 $$\vec{X} = \mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\pwrap{
     \mat{\colorU{u}_{\colorX{x}}\\\colorU{u}_{\colorY{y}}\\\colorU{u}_{\colorZ{z}}}\colorU{a} + 
@@ -724,10 +727,10 @@ $$\vec{X} = \mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\pwrap{
     \mat{\colorW{w}_{\colorX{x}}\\\colorW{w}_{\colorY{y}}\\\colorW{w}_{\colorZ{z}}}\colorW{c}
 }$$
 
-""")
+"""))
 
-text += MULTILINE(MATHSUB(r"""
-Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate $\colorU{a}, \colorV{b}, \colorW{c}$ becoming a column vector like $\colorX{x}, \colorY{y}, \colorZ{z}$, then we find the familiar face of a Matrix!
+text += MULTILINE(MATHSUB("""
+Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ becoming a column vector like """  + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorX{x}, \colorY{y}, \colorZ{z}}$"), scale=1.0, inline=True) + """ then we find the familiar face of a Matrix!
 """))
 
 text += LANGUAGE_TABLE(

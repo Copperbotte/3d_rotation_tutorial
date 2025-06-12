@@ -1,0 +1,19 @@
+\documentclass[preview]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\begin{document}
+
+$$\vec{X} = \left(\textcolor{magenta}{\hat{u}}\right)\textcolor{magenta}{a} + \left(\textcolor{orange}{\hat{v}}\right)\textcolor{orange}{b} + \left(\textcolor{yellow}{\hat{w}}\right)\textcolor{yellow}{c}$$
+$$\begin{align*}
+\textcolor{magenta}{\hat{u}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}
+&\quad&
+\textcolor{orange}{\hat{v}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}
+&\quad&
+\textcolor{yellow}{\hat{w}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
+\end{align*}$$
+$$\vec{X} =
+\left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{magenta}{a} +
+\left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{orange}{b} +
+\left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{yellow}{c}$$
+
+\end{document}

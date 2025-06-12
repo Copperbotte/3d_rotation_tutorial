@@ -12,7 +12,11 @@ Given some function `func(arg)`<table align="center">
 <tr>
 <td>
 
-$$func(arg)$$
+<div align="center"> 
+
+![./tex_cache/render_0000.svg](./tex_cache/render_0000.svg)
+
+</div>
 
 </td>
 <td>
@@ -50,8 +54,11 @@ T func(T arg);
 <tr>
 <td>
 
-$$func(x\cdot s) = func(x)\cdot s$$
-$$func(x + y) = func(x) + func(y)$$
+<div align="center"> 
+
+![./tex_cache/render_0001.svg](./tex_cache/render_0001.svg)
+
+</div>
 
 </td>
 <td>
@@ -96,12 +103,11 @@ For example, lets look at coordinates like a `Vector3`.  It has three inputs rat
 <tr>
 <td>
 
-$$\begin{align*}\text{Row Vectors}\end{align*}$$
-$$\left[x\cdot s,y\cdot s,z\cdot s\right] = \left[x,y,z\right]\cdot s$$
-$$\left[x, y, z\right] = \left[x,0,0\right] + \left[0,y,0\right] + \left[0,0,z\right]$$
-$$\begin{align*}\text{Column Vectors}\end{align*}$$
-$$\begin{bmatrix}x\cdot s\\y\cdot s\\z\cdot s\end{bmatrix} = \begin{bmatrix}x\\y\\z\end{bmatrix}\cdot s$$
-$$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}x\\0\\0\end{bmatrix} + \begin{bmatrix}0\\y\\0\end{bmatrix} + \begin{bmatrix}0\\0\\z\end{bmatrix}$$
+<div align="center"> 
+
+![./tex_cache/render_0002.svg](./tex_cache/render_0002.svg)
+
+</div>
 
 </td>
 <td>
@@ -163,8 +169,11 @@ This isn't enough to prove that these are *linear objects*, but it is enough to 
 <tr>
 <td>
 
-$$\begin{bmatrix}x\\y\\z\\1\end{bmatrix}\cdot s = \begin{bmatrix}x\cdot s\\y\cdot s\\z\cdot s\\\textcolor{orange}{s}\end{bmatrix}$$
-$$\begin{bmatrix}x\\y\\z\\1\end{bmatrix} + \begin{bmatrix}u\\v\\w\\1\end{bmatrix} = \begin{bmatrix}x+u\\y+v\\z+w\\\textcolor{orange}{2}\end{bmatrix}$$
+<div align="center"> 
+
+![./tex_cache/render_0003.svg](./tex_cache/render_0003.svg)
+
+</div>
 
 </td>
 <td>
@@ -231,7 +240,11 @@ There's another interesting consequence of these linear maps that very quickly l
 <tr>
 <td>
 
-$$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}x\\0\\0\end{bmatrix} + \begin{bmatrix}0\\y\\0\end{bmatrix} + \begin{bmatrix}0\\0\\z\end{bmatrix}$$
+<div align="center"> 
+
+![./tex_cache/render_0004.svg](./tex_cache/render_0004.svg)
+
+</div>
 
 </td>
 <td>
@@ -289,7 +302,11 @@ That variable, `x`, is a float, and since all the other entries are 0, we can us
 <tr>
 <td>
 
-$$\begin{bmatrix}x\\0\\0\end{bmatrix} = \begin{bmatrix}1\\0\\0\end{bmatrix} x$$
+<div align="center"> 
+
+![./tex_cache/render_0005.svg](./tex_cache/render_0005.svg)
+
+</div>
 
 </td>
 <td>
@@ -332,7 +349,11 @@ in general we can apply this to all three variables in a vector to find this:<ta
 <tr>
 <td>
 
-$$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}1\\0\\0\end{bmatrix} x + \begin{bmatrix}0\\1\\0\end{bmatrix} y + \begin{bmatrix}0\\0\\1\end{bmatrix} z$$
+<div align="center"> 
+
+![./tex_cache/render_0006.svg](./tex_cache/render_0006.svg)
+
+</div>
 
 </td>
 <td>
@@ -385,16 +406,22 @@ Assert(
 </tr>
 </table>
 
-![](basis.png "Basis Vectors")
-[Source: Wikipedia.org (Retrieved 2025 July 09)](https://commons.wikimedia.org/wiki/File:3D_Vector.svg)
+<div align="center">
+<img src=basis.png height="256px"/>
 
-Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a $\hat{\text{hat}}$ notation:<table align="center">
+[Source: Wikipedia.org (Retrieved 2025 July 09)](https://commons.wikimedia.org/wiki/File:3D_Vector.svg)
+</div>
+
+Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a <img src="./tex_cache/render_0007.svg" style="vertical-align: middle; display: inline-block;"/> notation:<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
 
-$$\vec{X} = \begin{bmatrix}x\\y\\z\end{bmatrix} = \textcolor{red}{\begin{bmatrix}1\\0\\0\end{bmatrix}} x + \textcolor{green}{\begin{bmatrix}0\\1\\0\end{bmatrix}} y + \textcolor{cyan}{\begin{bmatrix}0\\0\\1\end{bmatrix}} z$$
-$$\vec{X} = \textcolor{red}{\hat{x}}\cdot x + \textcolor{green}{\hat{y}}\cdot y + \textcolor{cyan}{\hat{z}}\cdot z$$
+<div align="center"> 
+
+![./tex_cache/render_0008.svg](./tex_cache/render_0008.svg)
+
+</div>
 
 </td>
 <td>
@@ -450,8 +477,11 @@ If you're familiar with shaders, you've likely come across the dot product.  Tak
 <tr>
 <td>
 
-$$\vec{X} = \textcolor{red}{\hat{x}}\cdot x + \textcolor{green}{\hat{y}}\cdot y + \textcolor{cyan}{\hat{z}}\cdot z$$
-$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix}$$
+<div align="center"> 
+
+![./tex_cache/render_0009.svg](./tex_cache/render_0009.svg)
+
+</div>
 
 </td>
 <td>
@@ -528,70 +558,30 @@ Assert(xHat*x + yHat*y + zHat*z == dot3(Basis, X));
 </tr>
 </table>
 
-That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!
+That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!<div align="center"> 
 
-$$\vec{X} = \textcolor{magenta}{\hat{u}\cdot a} + \textcolor{orange}{\hat{v}\cdot b} + \textcolor{yellow}{\hat{w}\cdot c}$$
+![./tex_cache/render_0010.svg](./tex_cache/render_0010.svg)
 
-(Please excuse only having math notation here, I'm at a loss of how to show this with code without skipping to the end)
+</div>(Please excuse only having math notation here, I'm at a loss of how to show this with code without skipping to the end)
 
-Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:
+Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:<div align="center"> 
 
-$$\vec{X} = \left(\textcolor{magenta}{\hat{u}}\right)\textcolor{magenta}{a} + \left(\textcolor{orange}{\hat{v}}\right)\textcolor{orange}{b} + \left(\textcolor{yellow}{\hat{w}}\right)\textcolor{yellow}{c}$$
+![./tex_cache/render_0011.svg](./tex_cache/render_0011.svg)
 
-$$\begin{align*}
+</div>Since the coordinate <img src="./tex_cache/render_0012.svg" style="vertical-align: middle; display: inline-block;"/> are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:<div align="center"> 
 
-    \textcolor{magenta}{\hat{u}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}
-&\quad&
-    \textcolor{orange}{\hat{v}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}
-&\quad&
-    \textcolor{yellow}{\hat{w}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
+![./tex_cache/render_0013.svg](./tex_cache/render_0013.svg)
 
-<<<<<<< HEAD
-\end{align*}$$
-=======
-Since the coordinate <img src="./tex_cache/render_0011.svg" style="vertical-align: middle; display: inline-block;"/> are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
->>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
-
-$$\vec{X} = 
-    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{magenta}{a} + 
-
-    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{orange}{b} + 
-
-    \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{yellow}{c}$$
-
-<<<<<<< HEAD
-Since the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
-
-$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\left(
-    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{magenta}{a} + 
-    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{orange}{b} + 
-    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{yellow}{c}
-\right)$$
-
-Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ becoming a column vector like $\textcolor{red}{x}, \textcolor{green}{y}, \textcolor{cyan}{z}$, then we find the familiar face of a Matrix!<table align="center">
-=======
-Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate <img src="./tex_cache/render_0013.svg" style="vertical-align: middle; display: inline-block;"/> becoming a column vector like <img src="./tex_cache/render_0014.svg" style="vertical-align: middle; display: inline-block;"/>, then we find the familiar face of a Matrix!<table align="center">
->>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
+</div>Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate <img src="./tex_cache/render_0014.svg" style="vertical-align: middle; display: inline-block;"/> becoming a column vector like <img src="./tex_cache/render_0015.svg" style="vertical-align: middle; display: inline-block;"/> then we find the familiar face of a Matrix!<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
 
-$$\vec{X} = \textcolor{red}{\hat{x}}\cdot \textcolor{red}{x} + \textcolor{green}{\hat{y}}\cdot \textcolor{green}{y} + \textcolor{cyan}{\hat{z}}\cdot \textcolor{cyan}{z}$$
-$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix}$$
-$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} = 
-    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{magenta}{a} + 
-    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{orange}{b} + 
-    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{yellow}{c}$$
-$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} = \begin{bmatrix}
-    \begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix} &  
-    \begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix} &
-    \begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
-\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
-$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}
-    \textcolor{magenta}{u}_{\textcolor{red}{x}}&\textcolor{orange}{v}_{\textcolor{red}{x}}&\textcolor{yellow}{w}_{\textcolor{red}{x}}\\
-    \textcolor{magenta}{u}_{\textcolor{green}{y}}&\textcolor{orange}{v}_{\textcolor{green}{y}}&\textcolor{yellow}{w}_{\textcolor{green}{y}}\\
-    \textcolor{magenta}{u}_{\textcolor{cyan}{z}}&\textcolor{orange}{v}_{\textcolor{cyan}{z}}&\textcolor{yellow}{w}_{\textcolor{cyan}{z}}
-\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
+<div align="center"> 
+
+![./tex_cache/render_0016.svg](./tex_cache/render_0016.svg)
+
+</div>
 
 </td>
 <td>
