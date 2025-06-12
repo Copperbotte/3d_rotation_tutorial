@@ -1,43 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   
-   height="4.498684em"
-   viewBox="0 0 105.97062 35.854874"
-   preserveAspectRatio="xMidYMid meet"
+   width="128.73225"
+   height="35.854874"
+   viewBox="0 0 128.73225 35.854874"
    version="1.1"
-   id="svg200"
-   sodipodi:docname="render_0004_tmp.svg"
+   id="svg215"
+   sodipodi:docname="render_0006_tmp.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-<style>
-:root {
-  --colorX: #c3766a;
-  --colorY: #5b9a68;
-  --colorZ: #6c81c0;
-  --colorU: #a4883e;
-  --colorV: #2397a7;
-  --colorW: #a36b9f;
-  }
-    @media (prefers-color-scheme: dark)
-    {
-    :root {
-      --colorX: #f9a598;
-      --colorY: #87c993;
-      --colorZ: #94acef;
-      --colorU: #d4b76b;
-      --colorV: #58c4d5;
-      --colorW: #ce93ca;
-    }
-    svg {
-        color: white;
-    }
-    }
-</style>
   <sodipodi:namedview
-     id="namedview202"
+     id="namedview217"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -45,9 +20,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0" />
   <defs
-     id="defs58">
+     id="defs61">
     <g
-       id="g32">
+       id="g35">
       <g
          id="glyph-0-0">
         <path
@@ -99,506 +74,551 @@
       <g
          id="glyph-2-1">
         <path
-           d="m 4.578125,-3.1875 c 0,-0.796875 -0.046875,-1.59375 -0.390625,-2.328125 -0.453125,-0.96875 -1.28125,-1.125 -1.6875,-1.125 -0.609375,0 -1.328125,0.265625 -1.75,1.1875 -0.3125,0.6875 -0.359375,1.46875 -0.359375,2.265625 0,0.75 0.03125,1.640625 0.453125,2.40625 0.421875,0.796875 1.15625,1 1.640625,1 0.53125,0 1.296875,-0.203125 1.734375,-1.15625 0.3125,-0.6875 0.359375,-1.46875 0.359375,-2.25 z M 2.484375,0 C 2.09375,0 1.5,-0.25 1.328125,-1.203125 1.21875,-1.796875 1.21875,-2.71875 1.21875,-3.3125 c 0,-0.640625 0,-1.296875 0.078125,-1.828125 0.1875,-1.1875 0.9375,-1.28125 1.1875,-1.28125 0.328125,0 0.984375,0.1875 1.171875,1.171875 0.109375,0.5625 0.109375,1.3125 0.109375,1.9375 0,0.75 0,1.421875 -0.109375,2.0625 C 3.5,-0.296875 2.9375,0 2.484375,0 Z m 0,0"
+           d="m 2.9375,-6.375 c 0,-0.25 0,-0.265625 -0.234375,-0.265625 C 2.078125,-6 1.203125,-6 0.890625,-6 v 0.3125 c 0.203125,0 0.78125,0 1.296875,-0.265625 v 5.171875 c 0,0.359375 -0.03125,0.46875 -0.921875,0.46875 h -0.3125 V 0 c 0.34375,-0.03125 1.203125,-0.03125 1.609375,-0.03125 0.390625,0 1.265625,0 1.609375,0.03125 v -0.3125 h -0.3125 c -0.90625,0 -0.921875,-0.109375 -0.921875,-0.46875 z m 0,0"
            id="path26" />
       </g>
       <g
          id="glyph-2-2">
         <path
-           d="m 4.078125,-2.296875 h 2.78125 C 7,-2.296875 7.1875,-2.296875 7.1875,-2.5 7.1875,-2.6875 7,-2.6875 6.859375,-2.6875 h -2.78125 v -2.796875 c 0,-0.140625 0,-0.328125 -0.203125,-0.328125 -0.203125,0 -0.203125,0.1875 -0.203125,0.328125 V -2.6875 h -2.78125 c -0.140625,0 -0.328125,0 -0.328125,0.1875 0,0.203125 0.1875,0.203125 0.328125,0.203125 h 2.78125 V 0.5 c 0,0.140625 0,0.328125 0.203125,0.328125 0.203125,0 0.203125,-0.1875 0.203125,-0.328125 z m 0,0"
+           d="m 4.578125,-3.1875 c 0,-0.796875 -0.046875,-1.59375 -0.390625,-2.328125 -0.453125,-0.96875 -1.28125,-1.125 -1.6875,-1.125 -0.609375,0 -1.328125,0.265625 -1.75,1.1875 -0.3125,0.6875 -0.359375,1.46875 -0.359375,2.265625 0,0.75 0.03125,1.640625 0.453125,2.40625 0.421875,0.796875 1.15625,1 1.640625,1 0.53125,0 1.296875,-0.203125 1.734375,-1.15625 0.3125,-0.6875 0.359375,-1.46875 0.359375,-2.25 z M 2.484375,0 C 2.09375,0 1.5,-0.25 1.328125,-1.203125 1.21875,-1.796875 1.21875,-2.71875 1.21875,-3.3125 c 0,-0.640625 0,-1.296875 0.078125,-1.828125 0.1875,-1.1875 0.9375,-1.28125 1.1875,-1.28125 0.328125,0 0.984375,0.1875 1.171875,1.171875 0.109375,0.5625 0.109375,1.3125 0.109375,1.9375 0,0.75 0,1.421875 -0.109375,2.0625 C 3.5,-0.296875 2.9375,0 2.484375,0 Z m 0,0"
            id="path29" />
+      </g>
+      <g
+         id="glyph-2-3">
+        <path
+           d="m 4.078125,-2.296875 h 2.78125 C 7,-2.296875 7.1875,-2.296875 7.1875,-2.5 7.1875,-2.6875 7,-2.6875 6.859375,-2.6875 h -2.78125 v -2.796875 c 0,-0.140625 0,-0.328125 -0.203125,-0.328125 -0.203125,0 -0.203125,0.1875 -0.203125,0.328125 V -2.6875 h -2.78125 c -0.140625,0 -0.328125,0 -0.328125,0.1875 0,0.203125 0.1875,0.203125 0.328125,0.203125 h 2.78125 V 0.5 c 0,0.140625 0,0.328125 0.203125,0.328125 0.203125,0 0.203125,-0.1875 0.203125,-0.328125 z m 0,0"
+           id="path32" />
       </g>
     </g>
     <clipPath
        id="clip-0">
       <path
          clip-rule="nonzero"
-         d="m 118,18 h 5 v 18.863281 h -5 z m 0,0"
-         id="path34" />
+         d="m 108,18 h 5 v 18.863281 h -5 z m 0,0"
+         id="path37" />
     </clipPath>
     <clipPath
        id="clip-1">
       <path
          clip-rule="nonzero"
-         d="m 128,18 h 4 v 18.863281 h -4 z m 0,0"
-         id="path37" />
+         d="m 118,18 h 4 v 18.863281 h -4 z m 0,0"
+         id="path40" />
     </clipPath>
     <clipPath
        id="clip-2">
       <path
          clip-rule="nonzero"
-         d="m 151,18 h 4 v 18.863281 h -4 z m 0,0"
-         id="path40" />
+         d="m 141,18 h 4 v 18.863281 h -4 z m 0,0"
+         id="path43" />
     </clipPath>
     <clipPath
        id="clip-3">
       <path
          clip-rule="nonzero"
-         d="m 160,18 h 4 v 18.863281 h -4 z m 0,0"
-         id="path43" />
+         d="m 149,18 h 4 v 18.863281 h -4 z m 0,0"
+         id="path46" />
     </clipPath>
     <clipPath
        id="clip-4">
       <path
          clip-rule="nonzero"
-         d="m 182,18 h 4 v 18.863281 h -4 z m 0,0"
-         id="path46" />
+         d="m 178,18 h 5 v 18.863281 h -5 z m 0,0"
+         id="path49" />
     </clipPath>
     <clipPath
        id="clip-5">
       <path
          clip-rule="nonzero"
-         d="m 190,18 h 5 v 18.863281 h -5 z m 0,0"
-         id="path49" />
+         d="m 187,18 h 4 v 18.863281 h -4 z m 0,0"
+         id="path52" />
     </clipPath>
     <clipPath
        id="clip-6">
       <path
          clip-rule="nonzero"
-         d="m 212,18 h 5 v 18.863281 h -5 z m 0,0"
-         id="path52" />
+         d="m 216,18 h 4 v 18.863281 h -4 z m 0,0"
+         id="path55" />
     </clipPath>
     <clipPath
        id="clip-7">
       <path
          clip-rule="nonzero"
-         d="m 221,18 h 4 v 18.863281 h -4 z m 0,0"
-         id="path55" />
+         d="m 224,18 h 5 v 18.863281 h -5 z m 0,0"
+         id="path58" />
     </clipPath>
   </defs>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g62"
-     transform="translate(-118.87,-1.004375)">
+     id="g65"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-0"
-       x="115.62"
+       x="105.657"
        y="1.395"
-       id="use60"
+       id="use63"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-0)"
-     id="g68"
-     transform="translate(-118.87,-1.004375)">
+     id="g71"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g66">
+       id="g69">
       <use
          xlink:href="#glyph-0-1"
-         x="115.62"
+         x="105.657"
          y="19.327999"
-         id="use64"
+         id="use67"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g72"
-     transform="translate(-118.87,-1.004375)">
+     id="g75"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-1-0"
-       x="122.261"
+       x="112.299"
        y="9.3649998"
-       id="use70"
+       id="use73"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g76"
-     transform="translate(-118.87,-1.004375)">
+     id="g79"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-1-1"
-       x="122.487"
+       x="112.525"
        y="21.32"
-       id="use74"
+       id="use77"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g80"
-     transform="translate(-118.87,-1.004375)">
+     id="g83"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-1-2"
-       x="122.573"
+       x="112.61"
        y="33.275002"
-       id="use78"
+       id="use81"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g84"
-     transform="translate(-118.87,-1.004375)">
+     id="g87"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-2"
-       x="127.955"
+       x="117.993"
        y="1.395"
-       id="use82"
+       id="use85"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-1)"
-     id="g90"
-     transform="translate(-118.87,-1.004375)">
+     id="g93"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g88">
+       id="g91">
       <use
          xlink:href="#glyph-0-3"
-         x="127.955"
+         x="117.993"
          y="19.327999"
-         id="use86"
+         id="use89"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g94"
-     transform="translate(-118.87,-1.004375)">
+     id="g97"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-2-0"
-       x="137.36501"
+       x="127.402"
        y="21.42"
-       id="use92"
+       id="use95"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g98"
-     transform="translate(-118.87,-1.004375)">
+     id="g101"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-0"
-       x="147.881"
+       x="137.918"
        y="1.395"
-       id="use96"
+       id="use99"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-2)"
-     id="g104"
-     transform="translate(-118.87,-1.004375)">
+     id="g107"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g102">
+       id="g105">
       <use
          xlink:href="#glyph-0-1"
-         x="147.881"
+         x="137.918"
          y="19.327999"
-         id="use100"
+         id="use103"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g108"
-     transform="translate(-118.87,-1.004375)">
+     id="g111"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-1-0"
-       x="154.522"
+       xlink:href="#glyph-2-1"
+       x="144.56"
        y="9.3649998"
-       id="use106"
+       id="use109"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g112"
-     transform="translate(-118.87,-1.004375)">
+     id="g115"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-1"
-       x="154.879"
+       xlink:href="#glyph-2-2"
+       x="144.56"
        y="21.32"
-       id="use110"
+       id="use113"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g116"
-     transform="translate(-118.87,-1.004375)">
+     id="g119"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-1"
-       x="154.879"
+       xlink:href="#glyph-2-2"
+       x="144.56"
        y="33.275002"
-       id="use114"
+       id="use117"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g120"
-     transform="translate(-118.87,-1.004375)">
+     id="g123"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-2"
-       x="160.216"
+       x="149.541"
        y="1.395"
-       id="use118"
+       id="use121"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-3)"
-     id="g126"
-     transform="translate(-118.87,-1.004375)">
+     id="g129"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g124">
+       id="g127">
       <use
          xlink:href="#glyph-0-3"
-         x="160.216"
+         x="149.541"
          y="19.327999"
-         id="use122"
+         id="use125"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g130"
-     transform="translate(-118.87,-1.004375)">
+     id="g133"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-2"
-       x="169.07201"
+       xlink:href="#glyph-1-0"
+       x="157.843"
        y="21.42"
-       id="use128"
+       id="use131"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g134"
-     transform="translate(-118.87,-1.004375)">
+     id="g137"
+     transform="translate(-108.907,-1.004375)">
+    <use
+       xlink:href="#glyph-2-3"
+       x="165.75101"
+       y="21.42"
+       id="use135"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     fill="#000000"
+     fill-opacity="1"
+     id="g141"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-0"
-       x="179.035"
+       x="175.714"
        y="1.395"
-       id="use132"
+       id="use139"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-4)"
-     id="g140"
-     transform="translate(-118.87,-1.004375)">
+     id="g147"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g138">
+       id="g145">
       <use
          xlink:href="#glyph-0-1"
-         x="179.035"
+         x="175.714"
          y="19.327999"
-         id="use136"
+         id="use143"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g144"
-     transform="translate(-118.87,-1.004375)">
+     id="g151"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-1"
-       x="185.80701"
+       xlink:href="#glyph-2-2"
+       x="182.355"
        y="9.3649998"
-       id="use142"
+       id="use149"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g148"
-     transform="translate(-118.87,-1.004375)">
-    <use
-       xlink:href="#glyph-1-1"
-       x="185.67599"
-       y="21.32"
-       id="use146"
-       width="100%"
-       height="100%" />
-  </g>
-  <g
-     fill="currentColor"
-     fill-opacity="1"
-     id="g152"
-     transform="translate(-118.87,-1.004375)">
+     id="g155"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-2-1"
-       x="185.80701"
-       y="33.275002"
-       id="use150"
+       x="182.355"
+       y="21.32"
+       id="use153"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g156"
-     transform="translate(-118.87,-1.004375)">
+     id="g159"
+     transform="translate(-108.907,-1.004375)">
+    <use
+       xlink:href="#glyph-2-2"
+       x="182.355"
+       y="33.275002"
+       id="use157"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     fill="#000000"
+     fill-opacity="1"
+     id="g163"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-2"
-       x="190.918"
+       x="187.33701"
        y="1.395"
-       id="use154"
+       id="use161"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-5)"
-     id="g162"
-     transform="translate(-118.87,-1.004375)">
+     id="g169"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g160">
+       id="g167">
       <use
          xlink:href="#glyph-0-3"
-         x="190.918"
+         x="187.33701"
          y="19.327999"
-         id="use158"
+         id="use165"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g166"
-     transform="translate(-118.87,-1.004375)">
+     id="g173"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-2"
-       x="199.774"
+       xlink:href="#glyph-1-1"
+       x="195.63901"
        y="21.42"
-       id="use164"
+       id="use171"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g170"
-     transform="translate(-118.87,-1.004375)">
+     id="g177"
+     transform="translate(-108.907,-1.004375)">
+    <use
+       xlink:href="#glyph-2-3"
+       x="203.095"
+       y="21.42"
+       id="use175"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     fill="#000000"
+     fill-opacity="1"
+     id="g181"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-0"
-       x="209.737"
+       x="213.05701"
        y="1.395"
-       id="use168"
+       id="use179"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-6)"
-     id="g176"
-     transform="translate(-118.87,-1.004375)">
+     id="g187"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g174">
+       id="g185">
       <use
          xlink:href="#glyph-0-1"
-         x="209.737"
+         x="213.05701"
          y="19.327999"
-         id="use172"
+         id="use183"
          width="100%"
          height="100%" />
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g180"
-     transform="translate(-118.87,-1.004375)">
+     id="g191"
+     transform="translate(-108.907,-1.004375)">
     <use
-       xlink:href="#glyph-2-1"
-       x="216.423"
+       xlink:href="#glyph-2-2"
+       x="219.69901"
        y="9.3649998"
-       id="use178"
+       id="use189"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g184"
-     transform="translate(-118.87,-1.004375)">
+     id="g195"
+     transform="translate(-108.907,-1.004375)">
+    <use
+       xlink:href="#glyph-2-2"
+       x="219.69901"
+       y="21.32"
+       id="use193"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     fill="#000000"
+     fill-opacity="1"
+     id="g199"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-2-1"
-       x="216.423"
-       y="21.32"
-       id="use182"
-       width="100%"
-       height="100%" />
-  </g>
-  <g
-     fill="currentColor"
-     fill-opacity="1"
-     id="g188"
-     transform="translate(-118.87,-1.004375)">
-    <use
-       xlink:href="#glyph-1-2"
-       x="216.37801"
+       x="219.69901"
        y="33.275002"
-       id="use186"
+       id="use197"
        width="100%"
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
-     id="g192"
-     transform="translate(-118.87,-1.004375)">
+     id="g203"
+     transform="translate(-108.907,-1.004375)">
     <use
        xlink:href="#glyph-0-2"
-       x="221.45"
+       x="224.681"
        y="1.395"
-       id="use190"
+       id="use201"
        width="100%"
        height="100%" />
   </g>
   <g
      clip-path="url(#clip-7)"
-     id="g198"
-     transform="translate(-118.87,-1.004375)">
+     id="g209"
+     transform="translate(-108.907,-1.004375)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
-       id="g196">
+       id="g207">
       <use
          xlink:href="#glyph-0-3"
-         x="221.45"
+         x="224.681"
          y="19.327999"
-         id="use194"
+         id="use205"
          width="100%"
          height="100%" />
     </g>
+  </g>
+  <g
+     fill="#000000"
+     fill-opacity="1"
+     id="g213"
+     transform="translate(-108.907,-1.004375)">
+    <use
+       xlink:href="#glyph-1-2"
+       x="232.983"
+       y="21.42"
+       id="use211"
+       width="100%"
+       height="100%" />
   </g>
 </svg>

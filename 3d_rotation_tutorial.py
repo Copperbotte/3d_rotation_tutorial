@@ -62,12 +62,12 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     tex = "./tex_cache/render_%04d.tex"%SVG_FROM_TEX_PROCESSED
     pdf = tex.replace('.tex','.pdf')
     svg_tmp = tex.replace('.tex','_tmp.svg')
-    #svg_tmp2 = tex.replace('.tex','_tmp2.svg')
+    svg_tmp2 = tex.replace('.tex','_tmp2.svg')
     svg = tex.replace('.tex','.svg')
     fld = "./tex_cache"
     cmd1 = "pdflatex -output-directory=\"%s\" -interaction=nonstopmode \"%s\""%(fld, tex)
     cmd2 = "pdf2svg \"%s\" \"%s\""%(pdf, svg_tmp)
-    cmd3 = "\"%s\" \"%s\" --export-type=svg --export-filename=\"%s\" --export-area-drawing"%(inkscape, svg_tmp, svg)
+    cmd3 = "\"%s\" \"%s\" --export-type=svg --export-filename=\"%s\" --export-area-drawing"%(inkscape, svg_tmp, svg_tmp2)
     #cmd4 = "\"%s\" \"%s\" --export-type=svg --export-filename=\"%s\" --export-text-to-path"%(inkscape, pdf, svg_tmp2)
 
     with open(tex, 'w') as o:
@@ -84,7 +84,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 
         # Postprocess SVG
         # Swap width to width="100%", and height to height="100%"
-        with open(svg, 'r') as o:
+        with open(svg_tmp2, 'r') as o:
             svg_text = o.read()
 
         replacements = [
@@ -138,12 +138,12 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
             svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
 
 
-        lite_colorX = "#7c4c45"
-        lite_colorY = "#385e3f"
-        lite_colorZ = "#3e4b72"
-        lite_colorU = "#665528"
-        lite_colorV = "#165a64"
-        lite_colorW = "#5e3c5b"
+        lite_colorX = "#c3766a"
+        lite_colorY = "#5b9a68"
+        lite_colorZ = "#6c81c0"
+        lite_colorU = "#a4883e"
+        lite_colorV = "#2397a7"
+        lite_colorW = "#a36b9f"
 
         dark_colorX = "#f9a598"
         dark_colorY = "#87c993"

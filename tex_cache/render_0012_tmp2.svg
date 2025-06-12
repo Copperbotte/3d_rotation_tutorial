@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   
-   height="1.000225em"
+   width="25.88225"
+   height="9.9648438"
    viewBox="0 0 25.88225 9.9648435"
-   preserveAspectRatio="xMidYMid meet"
    version="1.1"
    id="svg72"
-   sodipodi:docname="render_0016_tmp.svg"
+   sodipodi:docname="render_0012_tmp.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-<style>
-:root {
-  --colorX: #c3766a;
-  --colorY: #5b9a68;
-  --colorZ: #6c81c0;
-  --colorU: #a4883e;
-  --colorV: #2397a7;
-  --colorW: #a36b9f;
-  }
-    @media (prefers-color-scheme: dark)
-    {
-    :root {
-      --colorX: #f9a598;
-      --colorY: #87c993;
-      --colorZ: #94acef;
-      --colorU: #d4b76b;
-      --colorV: #58c4d5;
-      --colorW: #ce93ca;
-    }
-    svg {
-        color: white;
-    }
-    }
-</style>
   <sodipodi:namedview
      id="namedview74"
      pagecolor="#ffffff"
@@ -119,7 +94,7 @@
      id="g40"
      transform="translate(-1.171875)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g38">
       <use
@@ -132,7 +107,7 @@
     </g>
   </g>
   <g
-     fill="var(--colorU)"
+     fill="#00ffff"
      fill-opacity="1"
      id="g44"
      transform="translate(-1.171875)">
@@ -149,7 +124,7 @@
      id="g50"
      transform="translate(-1.171875)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g48">
       <use
@@ -162,7 +137,7 @@
     </g>
   </g>
   <g
-     fill="var(--colorV)"
+     fill="#ff00ff"
      fill-opacity="1"
      id="g54"
      transform="translate(-1.171875)">
@@ -179,7 +154,7 @@
      id="g60"
      transform="translate(-1.171875)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g58">
       <use
@@ -192,7 +167,7 @@
     </g>
   </g>
   <g
-     fill="var(--colorW)"
+     fill="#ffff00"
      fill-opacity="1"
      id="g64"
      transform="translate(-1.171875)">
@@ -209,7 +184,7 @@
      id="g70"
      transform="translate(-1.171875)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g68">
       <use

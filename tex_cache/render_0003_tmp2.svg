@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   
-   height="12.873883em"
+   width="96.551628"
+   height="102.60588"
    viewBox="0 0 96.551629 102.60588"
-   preserveAspectRatio="xMidYMid meet"
    version="1.1"
    id="svg398"
    sodipodi:docname="render_0003_tmp.svg"
@@ -12,30 +11,6 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-<style>
-:root {
-  --colorX: #c3766a;
-  --colorY: #5b9a68;
-  --colorZ: #6c81c0;
-  --colorU: #a4883e;
-  --colorV: #2397a7;
-  --colorW: #a36b9f;
-  }
-    @media (prefers-color-scheme: dark)
-    {
-    :root {
-      --colorX: #f9a598;
-      --colorY: #87c993;
-      --colorZ: #94acef;
-      --colorU: #d4b76b;
-      --colorV: #58c4d5;
-      --colorW: #ce93ca;
-    }
-    svg {
-        color: white;
-    }
-    }
-</style>
   <sodipodi:namedview
      id="namedview400"
      pagecolor="#ffffff"
@@ -201,7 +176,7 @@
     </clipPath>
   </defs>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g80"
      transform="translate(-123.579,-1.0033751)">
@@ -214,7 +189,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g84"
      transform="translate(-123.579,-1.0033751)">
@@ -227,7 +202,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g88"
      transform="translate(-123.579,-1.0033751)">
@@ -240,7 +215,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g92"
      transform="translate(-123.579,-1.0033751)">
@@ -253,7 +228,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g96"
      transform="translate(-123.579,-1.0033751)">
@@ -266,7 +241,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g100"
      transform="translate(-123.579,-1.0033751)">
@@ -279,7 +254,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g104"
      transform="translate(-123.579,-1.0033751)">
@@ -292,7 +267,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g108"
      transform="translate(-123.579,-1.0033751)">
@@ -305,7 +280,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g112"
      transform="translate(-123.579,-1.0033751)">
@@ -318,7 +293,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g116"
      transform="translate(-123.579,-1.0033751)">
@@ -331,7 +306,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g120"
      transform="translate(-123.579,-1.0033751)">
@@ -344,7 +319,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g124"
      transform="translate(-123.579,-1.0033751)">
@@ -357,7 +332,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g128"
      transform="translate(-123.579,-1.0033751)">
@@ -370,7 +345,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g132"
      transform="translate(-123.579,-1.0033751)">
@@ -383,7 +358,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g136"
      transform="translate(-123.579,-1.0033751)">
@@ -396,7 +371,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g140"
      transform="translate(-123.579,-1.0033751)">
@@ -409,7 +384,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g144"
      transform="translate(-123.579,-1.0033751)">
@@ -422,7 +397,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g148"
      transform="translate(-123.579,-1.0033751)">
@@ -435,7 +410,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g152"
      transform="translate(-123.579,-1.0033751)">
@@ -448,7 +423,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g156"
      transform="translate(-123.579,-1.0033751)">
@@ -461,7 +436,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g160"
      transform="translate(-123.579,-1.0033751)">
@@ -474,7 +449,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g164"
      transform="translate(-123.579,-1.0033751)">
@@ -487,7 +462,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g168"
      transform="translate(-123.579,-1.0033751)">
@@ -500,7 +475,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g172"
      transform="translate(-123.579,-1.0033751)">
@@ -513,7 +488,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g176"
      transform="translate(-123.579,-1.0033751)">
@@ -526,7 +501,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g180"
      transform="translate(-123.579,-1.0033751)">
@@ -539,7 +514,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g184"
      transform="translate(-123.579,-1.0033751)">
@@ -552,7 +527,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g188"
      transform="translate(-123.579,-1.0033751)">
@@ -578,7 +553,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g196"
      transform="translate(-123.579,-1.0033751)">
@@ -591,7 +566,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g200"
      transform="translate(-123.579,-1.0033751)">
@@ -604,7 +579,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g204"
      transform="translate(-123.579,-1.0033751)">
@@ -617,7 +592,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g208"
      transform="translate(-123.579,-1.0033751)">
@@ -630,7 +605,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g212"
      transform="translate(-123.579,-1.0033751)">
@@ -643,7 +618,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g216"
      transform="translate(-123.579,-1.0033751)">
@@ -656,7 +631,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g220"
      transform="translate(-123.579,-1.0033751)">
@@ -673,7 +648,7 @@
      id="g226"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g224">
       <use
@@ -686,7 +661,7 @@
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g230"
      transform="translate(-123.579,-1.0033751)">
@@ -699,7 +674,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g234"
      transform="translate(-123.579,-1.0033751)">
@@ -712,7 +687,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g238"
      transform="translate(-123.579,-1.0033751)">
@@ -725,7 +700,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g242"
      transform="translate(-123.579,-1.0033751)">
@@ -738,7 +713,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g246"
      transform="translate(-123.579,-1.0033751)">
@@ -751,7 +726,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g250"
      transform="translate(-123.579,-1.0033751)">
@@ -764,7 +739,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g254"
      transform="translate(-123.579,-1.0033751)">
@@ -781,7 +756,7 @@
      id="g260"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g258">
       <use
@@ -794,7 +769,7 @@
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g264"
      transform="translate(-123.579,-1.0033751)">
@@ -807,7 +782,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g268"
      transform="translate(-123.579,-1.0033751)">
@@ -820,7 +795,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g272"
      transform="translate(-123.579,-1.0033751)">
@@ -833,7 +808,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g276"
      transform="translate(-123.579,-1.0033751)">
@@ -850,7 +825,7 @@
      id="g282"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g280">
       <use
@@ -863,7 +838,7 @@
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g286"
      transform="translate(-123.579,-1.0033751)">
@@ -876,7 +851,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g290"
      transform="translate(-123.579,-1.0033751)">
@@ -889,7 +864,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g294"
      transform="translate(-123.579,-1.0033751)">
@@ -902,7 +877,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g298"
      transform="translate(-123.579,-1.0033751)">
@@ -915,7 +890,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g302"
      transform="translate(-123.579,-1.0033751)">
@@ -928,7 +903,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g306"
      transform="translate(-123.579,-1.0033751)">
@@ -941,7 +916,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g310"
      transform="translate(-123.579,-1.0033751)">
@@ -958,7 +933,7 @@
      id="g316"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g314">
       <use
@@ -971,7 +946,7 @@
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g320"
      transform="translate(-123.579,-1.0033751)">
@@ -984,7 +959,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g324"
      transform="translate(-123.579,-1.0033751)">
@@ -997,7 +972,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g328"
      transform="translate(-123.579,-1.0033751)">
@@ -1010,7 +985,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g332"
      transform="translate(-123.579,-1.0033751)">
@@ -1027,7 +1002,7 @@
      id="g338"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g336">
       <use
@@ -1040,7 +1015,7 @@
     </g>
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g342"
      transform="translate(-123.579,-1.0033751)">
@@ -1053,7 +1028,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g346"
      transform="translate(-123.579,-1.0033751)">
@@ -1066,7 +1041,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g350"
      transform="translate(-123.579,-1.0033751)">
@@ -1079,7 +1054,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g354"
      transform="translate(-123.579,-1.0033751)">
@@ -1092,7 +1067,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g358"
      transform="translate(-123.579,-1.0033751)">
@@ -1105,7 +1080,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g362"
      transform="translate(-123.579,-1.0033751)">
@@ -1118,7 +1093,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g366"
      transform="translate(-123.579,-1.0033751)">
@@ -1131,7 +1106,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g370"
      transform="translate(-123.579,-1.0033751)">
@@ -1144,7 +1119,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g374"
      transform="translate(-123.579,-1.0033751)">
@@ -1170,7 +1145,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g382"
      transform="translate(-123.579,-1.0033751)">
@@ -1183,7 +1158,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g386"
      transform="translate(-123.579,-1.0033751)">
@@ -1196,7 +1171,7 @@
        height="100%" />
   </g>
   <g
-     fill="currentColor"
+     fill="#000000"
      fill-opacity="1"
      id="g390"
      transform="translate(-123.579,-1.0033751)">
@@ -1213,7 +1188,7 @@
      id="g396"
      transform="translate(-123.579,-1.0033751)">
     <g
-       fill="currentColor"
+       fill="#000000"
        fill-opacity="1"
        id="g394">
       <use
