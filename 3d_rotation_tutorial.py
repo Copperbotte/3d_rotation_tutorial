@@ -47,9 +47,6 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 \end{document}
 """
 
-    if inline:
-        nodiv = True
-
     # # Clean TEX_INPUT for use with the template above
     # TEX_INPUT = TEX_INPUT.replace('$$\n', r'\\' + '\n')
     # # Only $$ that exist are at the beginnings now or are with invalid lines
@@ -153,11 +150,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 
     # The style applied here forces the svgs to stay inline with the text.
     if inline:
-        return f"""
-
-![{svg}]({svg})
-
-"""
+        return f" ![{svg}]({svg}) "
         #return f'<img src="{svg}" style="vertical-align: middle; display: inline-block;"/>'
         #return f' <img src="{svg}" height="1em" style="vertical-align: -1.5em; display: inline-block;"></img> '
         #return ' guh '
@@ -171,11 +164,15 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         return result
         
     #result = f'<img src="{svg}"/>'
-    result = """<div align="center"> 
+    result = """
+    
+<div align="center"> 
 
 %s
 
-</div>"""
+</div>
+
+"""
     
     #result = f'<div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">{result}</div>'
 

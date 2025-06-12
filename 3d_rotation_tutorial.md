@@ -12,11 +12,15 @@ Given some function `func(arg)`<table align="center">
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0000.svg](./tex_cache/render_0000.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -54,11 +58,15 @@ T func(T arg);
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0001.svg](./tex_cache/render_0001.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -103,11 +111,15 @@ For example, lets look at coordinates like a `Vector3`.  It has three inputs rat
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0002.svg](./tex_cache/render_0002.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -169,11 +181,15 @@ This isn't enough to prove that these are *linear objects*, but it is enough to 
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0003.svg](./tex_cache/render_0003.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -240,11 +256,15 @@ There's another interesting consequence of these linear maps that very quickly l
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0004.svg](./tex_cache/render_0004.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -302,11 +322,15 @@ That variable, `x`, is a float, and since all the other entries are 0, we can us
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0005.svg](./tex_cache/render_0005.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -349,11 +373,15 @@ in general we can apply this to all three variables in a vector to find this:<ta
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0006.svg](./tex_cache/render_0006.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -412,20 +440,20 @@ Assert(
 [Source: Wikipedia.org (Retrieved 2025 July 09)](https://commons.wikimedia.org/wiki/File:3D_Vector.svg)
 </div>
 
-Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a 
-
-![./tex_cache/render_0007.svg](./tex_cache/render_0007.svg)
-
- notation:<table align="center">
+Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a  ![./tex_cache/render_0007.svg](./tex_cache/render_0007.svg)  notation:<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0008.svg](./tex_cache/render_0008.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -481,11 +509,15 @@ If you're familiar with shaders, you've likely come across the dot product.  Tak
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0009.svg](./tex_cache/render_0009.svg)
 
 </div>
+
+
 
 </td>
 <td>
@@ -562,42 +594,46 @@ Assert(xHat*x + yHat*y + zHat*z == dot3(Basis, X));
 </tr>
 </table>
 
-That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!<div align="center"> 
+That choice of basis using the standard unit basis `[1,0,0], [0,1,0], [0,0,1]` is *arbitrary*, and as long as we use three unique, nonzero vectors that aren't scaled copies of each other, we can use whatever vectors we want as our basis!
+    
+<div align="center"> 
 
 ![./tex_cache/render_0010.svg](./tex_cache/render_0010.svg)
 
-</div>(Please excuse only having math notation here, I'm at a loss of how to show this with code without skipping to the end)
+</div>
 
-Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:<div align="center"> 
+(Please excuse only having math notation here, I'm at a loss of how to show this with code without skipping to the end)
+
+Now here's the kicker: Those new basis vectors are *still vectors,* so they're linear, so we can decompose them in terms of that standard basis `[1,0,0], [0,1,0], [0,0,1]`:
+    
+<div align="center"> 
 
 ![./tex_cache/render_0011.svg](./tex_cache/render_0011.svg)
 
-</div>Since the coordinate 
+</div>
 
-![./tex_cache/render_0012.svg](./tex_cache/render_0012.svg)
-
- are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:<div align="center"> 
+Since the coordinate  ![./tex_cache/render_0012.svg](./tex_cache/render_0012.svg)  are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
+    
+<div align="center"> 
 
 ![./tex_cache/render_0013.svg](./tex_cache/render_0013.svg)
 
-</div>Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate 
+</div>
 
-![./tex_cache/render_0014.svg](./tex_cache/render_0014.svg)
-
- becoming a column vector like 
-
-![./tex_cache/render_0015.svg](./tex_cache/render_0015.svg)
-
- then we find the familiar face of a Matrix!<table align="center">
+Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate  ![./tex_cache/render_0014.svg](./tex_cache/render_0014.svg)  becoming a column vector like  ![./tex_cache/render_0015.svg](./tex_cache/render_0015.svg)  then we find the familiar face of a Matrix!<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
 
+
+    
 <div align="center"> 
 
 ![./tex_cache/render_0016.svg](./tex_cache/render_0016.svg)
 
 </div>
+
+
 
 </td>
 <td>
