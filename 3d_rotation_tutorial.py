@@ -5,6 +5,178 @@
 #     This script builds the given markdown file with functional tables, as
 # opposed to the expected human readable .md file.
 
+<<<<<<< HEAD
+=======
+import subprocess as sp
+# Prints a line ran through a subprocess how you expect it to work!
+def Call(command, getlines=False, silence=False):
+    pprint = "> %s"%command
+    print(pprint)
+    lines = []
+    with sp.Popen(command,
+        stdout=sp.PIPE, stderr=sp.STDOUT,
+        shell=True, universal_newlines=True # universal newlines makes it not a binary output
+    ) as proc:
+        for line in iter(proc.stdout.readline, ""):
+            if not silence:
+                print(line[:-1])
+            if getlines:
+                lines.append(line[:-1])
+            
+    if getlines:
+        return proc.returncode, lines
+    return proc.returncode
+
+# from pathlib import Path
+# import json
+# jscache_path = './tex_cache/cache.json'
+# jscache = dict()
+# if Path.exists(jscache_path):
+#     with open(jscache, 'r') as o:
+#         jscache = json.load(o)
+
+global SVG_FROM_TEX_PROCESSED
+SVG_FROM_TEX_PROCESSED = 0
+def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
+    global SVG_FROM_TEX_PROCESSED # weird python edge case. This doesn't scale, i'm not gonna sweat about it.
+    TEX_TEMPLATE = r"""\documentclass[preview]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\begin{document}
+
+%s
+
+\end{document}
+"""
+
+    # # Clean TEX_INPUT for use with the template above
+    # TEX_INPUT = TEX_INPUT.replace('$$\n', r'\\' + '\n')
+    # # Only $$ that exist are at the beginnings now or are with invalid lines
+    # TEX_INPUT = TEX_INPUT.split('$$')
+    TEX_INPUT = TEX_INPUT.split('\n')
+    TEX_INPUT = [line.strip() for line in TEX_INPUT]
+    TEX_INPUT = list(filter(None, TEX_INPUT))
+    TEX_INPUT = '\n'.join(TEX_INPUT)
+    TEX_OUTPUT = TEX_TEMPLATE%TEX_INPUT
+
+    FONT_SIZE_MAGIC_NUMBER = 9.9626 #px, Found by extracting using cmd4.
+    inkscape = r"C:\Program Files\Inkscape\bin\inkscape.exe"
+    tex = "./tex_cache/render_%04d.tex"%SVG_FROM_TEX_PROCESSED
+    pdf = tex.replace('.tex','.pdf')
+    svg_tmp = tex.replace('.tex','_tmp.svg')
+    #svg_tmp2 = tex.replace('.tex','_tmp2.svg')
+    svg = tex.replace('.tex','.svg')
+    fld = "./tex_cache"
+    cmd1 = "pdflatex -output-directory=\"%s\" -interaction=nonstopmode \"%s\""%(fld, tex)
+    cmd2 = "pdf2svg \"%s\" \"%s\""%(pdf, svg_tmp)
+    cmd3 = "\"%s\" \"%s\" --export-type=svg --export-filename=\"%s\" --export-area-drawing"%(inkscape, svg_tmp, svg)
+    #cmd4 = "\"%s\" \"%s\" --export-type=svg --export-filename=\"%s\" --export-text-to-path"%(inkscape, pdf, svg_tmp2)
+
+    with open(tex, 'w') as o:
+        o.write(TEX_OUTPUT)
+    
+    if False:
+
+        if False:
+            Call(cmd1, silence=True)
+            print('#'*80)
+            Call(cmd2, silence=True)
+            print('#'*80)
+        Call(cmd3, silence=True)
+        #print('#'*80)
+        #Call(cmd4, silence=True)
+
+        # Postprocess SVG
+        # Swap width to width="100%", and height to height="100%"
+        with open(svg, 'r') as o:
+            svg_text = o.read()
+
+        replacements = [
+            #["width=\"", 'width="100%"'],
+            #["width=\"", 'width="10em"'],
+            ["width=\"", ''],
+            ["height=\"", 'height="100%"']
+            #["height=\"", 'height="18.293624em"']
+            #["height=\"", '']
+        ]
+        for k,v in replacements:
+            i0 = svg_text.index(k)
+            i1 = svg_text.index("\"", i0+1)+1
+            i2 = svg_text.index("\"", i1)+1
+            # svg_text[i0:i2] == 'width="153.40298"'
+            if 'height' in k:
+                height_px = svg_text[i1:i2-1]
+                height_em = float(height_px)/FONT_SIZE_MAGIC_NUMBER
+                height_em = height_em*scale
+                v = 'height="%.6fem"'%height_em
+            svg_text = svg_text[:i0] + v + svg_text[i2:]
+
+        # Inject preserveAspectRatio="xMidYMid meet" into the svg tag
+        svg_lines = svg_text.split('\n')
+        ind = 0
+        key = "viewBox"
+        for n in range(len(svg_lines)):
+            line = svg_lines[n].strip()
+            if key in line:
+                ind = n
+                break
+        svg_lines = svg_lines[:ind+1] + svg_lines[ind:]
+        line = svg_lines[ind+1]
+        svg_lines[ind+1] = line.split(key)[0] + 'preserveAspectRatio="xMidYMid meet"'
+        svg_text = '\n'.join(svg_lines)
+
+        # #3 and #4 is code written by ChatGPT.
+        # 3. Replace hard-coded black fills with currentColor (if any)
+        import re
+        svg_text = re.sub(r'fill="#000000"|fill="#000"|fill="black"', 'fill="currentColor"', svg_text, flags=re.IGNORECASE)
+
+        # 4. Inject dark mode CSS
+        style_block = """
+    <style>
+        @media (prefers-color-scheme: dark)
+        {
+        svg {
+            color: white;
+        }
+        }
+    </style>"""
+        # Insert just after opening <svg> tag
+        ind = svg_text.index("<svg")
+        ind = svg_text.index(">", ind+1)
+        svg_text = svg_text[:ind+1] + style_block + svg_text[ind+1:]
+
+        with open(svg, 'w') as o:
+            o.write(svg_text)
+
+    SVG_FROM_TEX_PROCESSED = SVG_FROM_TEX_PROCESSED + 1
+
+    # The style applied here forces the svgs to stay inline with the text.
+    if inline:
+        return f'<img src="{svg}" style="vertical-align: middle; display: inline-block;"/>'
+        #return f'<img src="{svg}" style="height=1em; vertical-align: -1.5em; display: inline-block;"/>'
+        #return f'<img src="{svg}" style="display: inline-block;"/>'
+        result = f"""<div style="display: inline-block;"> 
+
+<img src="{svg}"/>
+
+</div>"""
+        return result
+        
+    #result = f'<img src="{svg}"/>'
+    result = """<div align="center"> 
+
+%s
+
+</div>"""
+    
+    #result = f'<div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">{result}</div>'
+
+    result = result%(f'![{svg}]({svg})')
+    if nodiv:
+        result = f'![{svg}]({svg})'
+    return result
+
+>>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
 dst = "./3d_rotation_tutorial.md"
 
 # This function supplies definitions for various latex helpers.

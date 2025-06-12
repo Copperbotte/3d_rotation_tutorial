@@ -546,7 +546,11 @@ $$\begin{align*}
 &\quad&
     \textcolor{yellow}{\hat{w}} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
 
+<<<<<<< HEAD
 \end{align*}$$
+=======
+Since the coordinate <img src="./tex_cache/render_0011.svg" style="vertical-align: middle; display: inline-block;"/> are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
+>>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
 
 $$\vec{X} = 
     \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{magenta}{a} + 
@@ -555,6 +559,7 @@ $$\vec{X} =
 
     \left(\begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\right)\textcolor{yellow}{c}$$
 
+<<<<<<< HEAD
 Since the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
 
 $$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\left(
@@ -564,6 +569,9 @@ $$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\
 \right)$$
 
 Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate $\textcolor{magenta}{a}, \textcolor{orange}{b}, \textcolor{yellow}{c}$ becoming a column vector like $\textcolor{red}{x}, \textcolor{green}{y}, \textcolor{cyan}{z}$, then we find the familiar face of a Matrix!<table align="center">
+=======
+Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate <img src="./tex_cache/render_0013.svg" style="vertical-align: middle; display: inline-block;"/> becoming a column vector like <img src="./tex_cache/render_0014.svg" style="vertical-align: middle; display: inline-block;"/>, then we find the familiar face of a Matrix!<table align="center">
+>>>>>>> 25e9999 (SQUASH LATER: svg testing commit)
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
