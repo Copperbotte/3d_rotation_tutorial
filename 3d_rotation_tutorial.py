@@ -73,7 +73,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     with open(tex, 'w') as o:
         o.write(TEX_OUTPUT)
     
-    if True:
+    if False:
 
         if False:
             Call(cmd1, silence=True)
@@ -150,10 +150,10 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 
     # The style applied here forces the svgs to stay inline with the text.
     if inline:
-        return f' ![{svg}]({svg}) '
+        #return f' ![{svg}]({svg}) '
         #return f'<img src="{svg}" style="vertical-align: middle; display: inline-block;"/>'
         #return f'<img src="{svg}" style="height=1em; vertical-align: -1.5em; display: inline-block;"/>'
-        #return f'<img src="{svg}" style="display: inline-block;"/>'
+        return f'<img src="{svg}" style="display: inline-block;"/>'
         result = f"""<div style="display: inline-block;"> 
 
 <img src="{svg}"/>
