@@ -150,9 +150,13 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 
     # The style applied here forces the svgs to stay inline with the text.
     if inline:
-        #return f' ![{svg}]({svg}) '
+        return f'''
+    
+    ![{svg}]({svg}) 
+    
+    '''
         #return f'<img src="{svg}" style="vertical-align: middle; display: inline-block;"/>'
-        return f' <img src="{svg}" height="1em" style="vertical-align: -1.5em; display: inline-block;"></img> '
+        #return f' <img src="{svg}" height="1em" style="vertical-align: -1.5em; display: inline-block;"></img> '
         #return ' guh '
         #return f' <img src="{svg}" style="display: inline-block;"/> '
         #return f' ![]({svg}) '
