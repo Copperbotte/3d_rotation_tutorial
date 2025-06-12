@@ -74,12 +74,10 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         o.write(TEX_OUTPUT)
     
     if True:
-
-        if True:
-            Call(cmd1, silence=True)
-            print('#'*80)
-            Call(cmd2, silence=True)
-            print('#'*80)
+        #Call(cmd1, silence=True)
+        #print('#'*80)
+        #Call(cmd2, silence=True)
+        #print('#'*80)
         Call(cmd3, silence=True)
         #print('#'*80)
         #Call(cmd4, silence=True)
@@ -128,16 +126,64 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         import re
         svg_text = re.sub(r'fill="#000000"|fill="#000"|fill="black"', 'fill="currentColor"', svg_text, flags=re.IGNORECASE)
 
+        COLOR_MAP = {
+            "#FF0000": "colorX",
+            "#00FF00": "colorY",
+            "#0000FF": "colorZ",
+            "#00FFFF": "colorU",
+            "#FF00FF": "colorV",
+            "#FFFF00": "colorW",
+        }
+        for hexcode, var in COLOR_MAP.items():
+            svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
+
+
+        lite_colorX = "#7c4c45"
+        lite_colorY = "#385e3f"
+        lite_colorZ = "#3e4b72"
+        lite_colorU = "#665528"
+        lite_colorV = "#165a64"
+        lite_colorW = "#5e3c5b"
+
+        dark_colorX = "#f9a598"
+        dark_colorY = "#87c993"
+        dark_colorZ = "#94acef"
+        dark_colorU = "#d4b76b"
+        dark_colorV = "#58c4d5"
+        dark_colorW = "#ce93ca"
+
+        liteblock = f"""
+  --colorX: {lite_colorX};
+  --colorY: {lite_colorY};
+  --colorZ: {lite_colorZ};
+  --colorU: {lite_colorU};
+  --colorV: {lite_colorV};
+  --colorW: {lite_colorW};"""[1:]
+
+        darkblock = f"""
+      --colorX: {dark_colorX};
+      --colorY: {dark_colorY};
+      --colorZ: {dark_colorZ};
+      --colorU: {dark_colorU};
+      --colorV: {dark_colorV};
+      --colorW: {dark_colorW};"""[1:]
+
         # 4. Inject dark mode CSS
         style_block = """
-    <style>
-        @media (prefers-color-scheme: dark)
-        {
-        svg {
-            color: white;
-        }
-        }
-    </style>"""
+<style>
+:root {
+%s
+  }
+    @media (prefers-color-scheme: dark)
+    {
+    :root {
+%s
+    }
+    svg {
+        color: white;
+    }
+    }
+</style>"""%(liteblock, darkblock)
         # Insert just after opening <svg> tag
         ind = svg_text.index("<svg")
         ind = svg_text.index(">", ind+1)
@@ -212,13 +258,21 @@ def MATHSUB(math):
         r"\pwrap{#1}": r"\left(#1\right)",
         r"\bwrap{#1}": r"\left[#1\right]",
         r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",    # Colors used in my demo, oklab max saturation colors, oklab with deviation, with two deviations, default colors
-        r"\colorX{#1}" : r"\textcolor[HTML]{f9a598}{#1}",        # FF0000, f59789, fea294, f9a598, red
-        r"\colorY{#1}" : r"\textcolor[HTML]{87c993}{#1}",        # 00FF00, 7dc98c, 81cb8f, 87c993, green
-        r"\colorZ{#1}" : r"\textcolor[HTML]{94acef}{#1}",        # 007FFF, 96b1fe, 91abf6, 94acef, cyan  
-        r"\colorU{#1}" : r"\textcolor[HTML]{d4b76b}{#1}",        # 00FF7F, d2b057, d7b760, d4b76b, magenta
-        r"\colorV{#1}" : r"\textcolor[HTML]{58c4d5}{#1}",        # FF00FF, 43c8dc, 46c6d9, 58c4d5, orange
-        r"\colorW{#1}" : r"\textcolor[HTML]{ce93ca}{#1}",        # FFFF00, dd99d8, d290cd, ce93ca, yellow
+        r"\colorX{#1}" : r"\textcolor[HTML]{FF0000}{#1}",        # FF0000, f59789, fea294, f9a598, red
+        r"\colorY{#1}" : r"\textcolor[HTML]{00FF00}{#1}",        # 00FF00, 7dc98c, 81cb8f, 87c993, green
+        r"\colorZ{#1}" : r"\textcolor[HTML]{0000FF}{#1}",        # 007FFF, 96b1fe, 91abf6, 94acef, cyan  
+        r"\colorU{#1}" : r"\textcolor[HTML]{00FFFF}{#1}",        # 00FF7F, d2b057, d7b760, d4b76b, magenta
+        r"\colorV{#1}" : r"\textcolor[HTML]{FF00FF}{#1}",        # FF00FF, 43c8dc, 46c6d9, 58c4d5, orange
+        r"\colorW{#1}" : r"\textcolor[HTML]{FFFF00}{#1}",        # FFFF00, dd99d8, d290cd, ce93ca, yellow
     }
+
+    # Lightmode colors
+    #7c4c45
+    #385e3f
+    #3e4b72
+    #665528
+    #165a64
+    #5e3c5b
 
     def bs_fltr(s):
         keys = [r'\\', r'\{', r'\}']

@@ -12,14 +12,30 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-    <style>
-        @media (prefers-color-scheme: dark)
-        {
-        svg {
-            color: white;
-        }
-        }
-    </style>
+<style>
+:root {
+  --colorX: #7c4c45;
+  --colorY: #385e3f;
+  --colorZ: #3e4b72;
+  --colorU: #665528;
+  --colorV: #165a64;
+  --colorW: #5e3c5b;
+  }
+    @media (prefers-color-scheme: dark)
+    {
+    :root {
+      --colorX: #f9a598;
+      --colorY: #87c993;
+      --colorZ: #94acef;
+      --colorU: #d4b76b;
+      --colorV: #58c4d5;
+      --colorW: #ce93ca;
+    }
+    svg {
+        color: white;
+    }
+    }
+</style>
   <sodipodi:namedview
      id="namedview74"
      pagecolor="#ffffff"
@@ -116,7 +132,7 @@
     </g>
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g44"
      transform="translate(-1.171875)">
@@ -146,7 +162,7 @@
     </g>
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g54"
      transform="translate(-1.171875)">
@@ -176,7 +192,7 @@
     </g>
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g64"
      transform="translate(-1.171875)">

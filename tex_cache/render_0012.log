@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 23:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  12 JUN 2025 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,7 +252,7 @@ Here is how much of TeX's memory you used:
 mi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmr10.pfb>
 Output written on "D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation
-_tutorial\tex_cache\render_0012.pdf" (1 page, 18552 bytes).
+_tutorial\tex_cache\render_0012.pdf" (1 page, 18515 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

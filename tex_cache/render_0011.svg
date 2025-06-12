@@ -12,14 +12,30 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-    <style>
-        @media (prefers-color-scheme: dark)
-        {
-        svg {
-            color: white;
-        }
-        }
-    </style>
+<style>
+:root {
+  --colorX: #7c4c45;
+  --colorY: #385e3f;
+  --colorZ: #3e4b72;
+  --colorU: #665528;
+  --colorV: #165a64;
+  --colorW: #5e3c5b;
+  }
+    @media (prefers-color-scheme: dark)
+    {
+    :root {
+      --colorX: #f9a598;
+      --colorY: #87c993;
+      --colorZ: #94acef;
+      --colorU: #d4b76b;
+      --colorV: #58c4d5;
+      --colorW: #ce93ca;
+    }
+    svg {
+        color: white;
+    }
+    }
+</style>
   <sodipodi:namedview
      id="namedview783"
      pagecolor="#ffffff"
@@ -345,7 +361,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g147"
      transform="translate(-7.778625,-2.3120003)">
@@ -358,7 +374,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g151"
      transform="translate(-7.778625,-2.3120003)">
@@ -384,7 +400,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g159"
      transform="translate(-7.778625,-2.3120003)">
@@ -423,7 +439,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g171"
      transform="translate(-7.778625,-2.3120003)">
@@ -436,7 +452,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g175"
      transform="translate(-7.778625,-2.3120003)">
@@ -462,7 +478,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g183"
      transform="translate(-7.778625,-2.3120003)">
@@ -501,7 +517,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g195"
      transform="translate(-7.778625,-2.3120003)">
@@ -514,7 +530,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g199"
      transform="translate(-7.778625,-2.3120003)">
@@ -540,7 +556,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g207"
      transform="translate(-7.778625,-2.3120003)">
@@ -553,7 +569,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g211"
      transform="translate(-7.778625,-2.3120003)">
@@ -566,7 +582,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g215"
      transform="translate(-7.778625,-2.3120003)">
@@ -605,7 +621,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g227"
      transform="translate(-7.778625,-2.3120003)">
@@ -618,7 +634,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g231"
      transform="translate(-7.778625,-2.3120003)">
@@ -631,7 +647,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g235"
      transform="translate(-7.778625,-2.3120003)">
@@ -644,7 +660,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g239"
      transform="translate(-7.778625,-2.3120003)">
@@ -657,7 +673,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g243"
      transform="translate(-7.778625,-2.3120003)">
@@ -670,7 +686,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g247"
      transform="translate(-7.778625,-2.3120003)">
@@ -722,7 +738,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g263"
      transform="translate(-7.778625,-2.3120003)">
@@ -735,7 +751,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g267"
      transform="translate(-7.778625,-2.3120003)">
@@ -748,7 +764,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g271"
      transform="translate(-7.778625,-2.3120003)">
@@ -761,7 +777,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g275"
      transform="translate(-7.778625,-2.3120003)">
@@ -774,7 +790,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g279"
      transform="translate(-7.778625,-2.3120003)">
@@ -787,7 +803,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g283"
      transform="translate(-7.778625,-2.3120003)">
@@ -826,7 +842,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g295"
      transform="translate(-7.778625,-2.3120003)">
@@ -839,7 +855,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g299"
      transform="translate(-7.778625,-2.3120003)">
@@ -878,7 +894,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g311"
      transform="translate(-7.778625,-2.3120003)">
@@ -891,7 +907,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g315"
      transform="translate(-7.778625,-2.3120003)">
@@ -904,7 +920,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g319"
      transform="translate(-7.778625,-2.3120003)">
@@ -917,7 +933,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g323"
      transform="translate(-7.778625,-2.3120003)">
@@ -930,7 +946,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g327"
      transform="translate(-7.778625,-2.3120003)">
@@ -943,7 +959,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g331"
      transform="translate(-7.778625,-2.3120003)">
@@ -995,7 +1011,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g347"
      transform="translate(-7.778625,-2.3120003)">
@@ -1008,7 +1024,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g351"
      transform="translate(-7.778625,-2.3120003)">
@@ -1021,7 +1037,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g355"
      transform="translate(-7.778625,-2.3120003)">
@@ -1034,7 +1050,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g359"
      transform="translate(-7.778625,-2.3120003)">
@@ -1047,7 +1063,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g363"
      transform="translate(-7.778625,-2.3120003)">
@@ -1060,7 +1076,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g367"
      transform="translate(-7.778625,-2.3120003)">
@@ -1099,7 +1115,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g379"
      transform="translate(-7.778625,-2.3120003)">
@@ -1112,7 +1128,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g383"
      transform="translate(-7.778625,-2.3120003)">
@@ -1151,7 +1167,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g395"
      transform="translate(-7.778625,-2.3120003)">
@@ -1164,7 +1180,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g399"
      transform="translate(-7.778625,-2.3120003)">
@@ -1177,7 +1193,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g403"
      transform="translate(-7.778625,-2.3120003)">
@@ -1190,7 +1206,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g407"
      transform="translate(-7.778625,-2.3120003)">
@@ -1203,7 +1219,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g411"
      transform="translate(-7.778625,-2.3120003)">
@@ -1216,7 +1232,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g415"
      transform="translate(-7.778625,-2.3120003)">
@@ -1268,7 +1284,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g431"
      transform="translate(-7.778625,-2.3120003)">
@@ -1281,7 +1297,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g435"
      transform="translate(-7.778625,-2.3120003)">
@@ -1294,7 +1310,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g439"
      transform="translate(-7.778625,-2.3120003)">
@@ -1307,7 +1323,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g443"
      transform="translate(-7.778625,-2.3120003)">
@@ -1320,7 +1336,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g447"
      transform="translate(-7.778625,-2.3120003)">
@@ -1333,7 +1349,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g451"
      transform="translate(-7.778625,-2.3120003)">
@@ -1454,7 +1470,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g489"
      transform="translate(-7.778625,-2.3120003)">
@@ -1467,7 +1483,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g493"
      transform="translate(-7.778625,-2.3120003)">
@@ -1480,7 +1496,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g497"
      transform="translate(-7.778625,-2.3120003)">
@@ -1493,7 +1509,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g501"
      transform="translate(-7.778625,-2.3120003)">
@@ -1506,7 +1522,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g505"
      transform="translate(-7.778625,-2.3120003)">
@@ -1519,7 +1535,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g509"
      transform="translate(-7.778625,-2.3120003)">
@@ -1575,7 +1591,7 @@
     </g>
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g527"
      transform="translate(-7.778625,-2.3120003)">
@@ -1588,7 +1604,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g531"
      transform="translate(-7.778625,-2.3120003)">
@@ -1601,7 +1617,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g535"
      transform="translate(-7.778625,-2.3120003)">
@@ -1614,7 +1630,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g539"
      transform="translate(-7.778625,-2.3120003)">
@@ -1627,7 +1643,7 @@
        height="100%" />
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g543"
      transform="translate(-7.778625,-2.3120003)">
@@ -1640,7 +1656,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g547"
      transform="translate(-7.778625,-2.3120003)">
@@ -1713,7 +1729,7 @@
     </g>
   </g>
   <g
-     fill="#d4b76b"
+     fill="var(--colorU)"
      fill-opacity="1"
      id="g571"
      transform="translate(-7.778625,-2.3120003)">
@@ -1782,7 +1798,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g593"
      transform="translate(-7.778625,-2.3120003)">
@@ -1795,7 +1811,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g597"
      transform="translate(-7.778625,-2.3120003)">
@@ -1808,7 +1824,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g601"
      transform="translate(-7.778625,-2.3120003)">
@@ -1821,7 +1837,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g605"
      transform="translate(-7.778625,-2.3120003)">
@@ -1834,7 +1850,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g609"
      transform="translate(-7.778625,-2.3120003)">
@@ -1847,7 +1863,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g613"
      transform="translate(-7.778625,-2.3120003)">
@@ -1903,7 +1919,7 @@
     </g>
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g631"
      transform="translate(-7.778625,-2.3120003)">
@@ -1916,7 +1932,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g635"
      transform="translate(-7.778625,-2.3120003)">
@@ -1929,7 +1945,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g639"
      transform="translate(-7.778625,-2.3120003)">
@@ -1942,7 +1958,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g643"
      transform="translate(-7.778625,-2.3120003)">
@@ -1955,7 +1971,7 @@
        height="100%" />
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g647"
      transform="translate(-7.778625,-2.3120003)">
@@ -1968,7 +1984,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g651"
      transform="translate(-7.778625,-2.3120003)">
@@ -2041,7 +2057,7 @@
     </g>
   </g>
   <g
-     fill="#58c4d5"
+     fill="var(--colorV)"
      fill-opacity="1"
      id="g675"
      transform="translate(-7.778625,-2.3120003)">
@@ -2110,7 +2126,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g697"
      transform="translate(-7.778625,-2.3120003)">
@@ -2123,7 +2139,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g701"
      transform="translate(-7.778625,-2.3120003)">
@@ -2136,7 +2152,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g705"
      transform="translate(-7.778625,-2.3120003)">
@@ -2149,7 +2165,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g709"
      transform="translate(-7.778625,-2.3120003)">
@@ -2162,7 +2178,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g713"
      transform="translate(-7.778625,-2.3120003)">
@@ -2175,7 +2191,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g717"
      transform="translate(-7.778625,-2.3120003)">
@@ -2231,7 +2247,7 @@
     </g>
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g735"
      transform="translate(-7.778625,-2.3120003)">
@@ -2244,7 +2260,7 @@
        height="100%" />
   </g>
   <g
-     fill="#f9a598"
+     fill="var(--colorX)"
      fill-opacity="1"
      id="g739"
      transform="translate(-7.778625,-2.3120003)">
@@ -2257,7 +2273,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g743"
      transform="translate(-7.778625,-2.3120003)">
@@ -2270,7 +2286,7 @@
        height="100%" />
   </g>
   <g
-     fill="#87c993"
+     fill="var(--colorY)"
      fill-opacity="1"
      id="g747"
      transform="translate(-7.778625,-2.3120003)">
@@ -2283,7 +2299,7 @@
        height="100%" />
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g751"
      transform="translate(-7.778625,-2.3120003)">
@@ -2296,7 +2312,7 @@
        height="100%" />
   </g>
   <g
-     fill="#94acef"
+     fill="var(--colorZ)"
      fill-opacity="1"
      id="g755"
      transform="translate(-7.778625,-2.3120003)">
@@ -2369,7 +2385,7 @@
     </g>
   </g>
   <g
-     fill="#ce93ca"
+     fill="var(--colorW)"
      fill-opacity="1"
      id="g779"
      transform="translate(-7.778625,-2.3120003)">
