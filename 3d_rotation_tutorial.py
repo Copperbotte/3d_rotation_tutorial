@@ -47,6 +47,9 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 \end{document}
 """
 
+    if inline:
+        nodiv = True
+
     # # Clean TEX_INPUT for use with the template above
     # TEX_INPUT = TEX_INPUT.replace('$$\n', r'\\' + '\n')
     # # Only $$ that exist are at the beginnings now or are with invalid lines
