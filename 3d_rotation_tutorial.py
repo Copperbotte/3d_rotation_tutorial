@@ -75,7 +75,7 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     
     if False:
 
-        if False:
+        if True:
             Call(cmd1, silence=True)
             print('#'*80)
             Call(cmd2, silence=True)
@@ -259,7 +259,7 @@ def MATHSUB(math):
             break
 
 def MULTILINE(multiline_string):
-    return '\n\n%s\n\n'%multiline_string.strip()
+    return multiline_string.strip()
 
 def LANGUAGE_TABLE(math="", cpp="", csharp="", python=""):
 
@@ -723,7 +723,7 @@ $$\vec{X} =
 """))
 
 text += MULTILINE("""
-Since the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:
+Since the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ are all floats, we can group them with each """+ SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{\hat{u}}, \colorV{\hat{v}}, \colorW{\hat{w}}}$"), scale=1.0, inline=True) + """ basis vector. And since all the XYZ basis vectors are the same, we can rearrange the terms of the dot products to find this:
 """)
 
 text += SVG_FROM_TEX(MATHSUB(r"""
@@ -737,7 +737,7 @@ $$\vec{X} = \mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\pwrap{
 """))
 
 text += MULTILINE(MATHSUB("""
-Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ becoming a column vector like """  + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorX{x}, \colorY{y}, \colorZ{z}}$"), scale=1.0, inline=True) + """ then we find the familiar face of a Matrix!
+Notice how the resulting sum in the parenthesis is an """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorX{x}, \colorY{y}, \colorZ{z}}$"), scale=1.0, inline=True) + """ coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorU{a}, \colorV{b}, \colorW{c}}$"), scale=1.0, inline=True) + """ becoming a column vector like """ + SVG_FROM_TEX(MATHSUB(r"$\bwrap{\colorX{x}, \colorY{y}, \colorZ{z}}$"), scale=1.0, inline=True) + """ then we find the familiar face of a Matrix!
 """))
 
 text += LANGUAGE_TABLE(
@@ -761,15 +761,22 @@ $$\vec{X} = \mat{\colorX{\hat{x}}&\colorY{\hat{y}}&\colorZ{\hat{z}}}\mat{
 """),
     cpp=MULTILINE
    ("""
+
 float a, b, c;
 float ux, uy, uz;
 float vx, vy, vz;
 float wx, wy, wz;
+
+XMFLOAT3 xHat(1,0,0);
+XMFLOAT3 yHat(0,1,0);
+XMFLOAT3 zHat(0,0,1);
+XMFLOAT3 BasisXYZ[3] = {xHat, yHat, zHat};
+
 XMFLOAT3  ABC( a, b, c);
 XMFLOAT3 uHat(ux,uy,uz);
 XMFLOAT3 vHat(vx,vy,vz);
 XMFLOAT3 wHat(wx,wy,wz);
-XMFLOAT3 Basis[3] = {uHat, vHat, wHat};
+XMFLOAT3 BasisUVW[3] = {uHat, vHat, wHat};
 
 template <class B, class C>
 B dot3(B* basis, C coord)
@@ -780,18 +787,28 @@ B dot3(B* basis, C coord)
     return result;
 }
 
-XMFLOAT3 X = dot3(Basis, ABC);
+Assert(
+    uHat*a + vHat*b + wHat*c == 
+    dot3(BasisXYZ, dot3(BasisUVW, ABC))
+);
 """),
     csharp=MULTILINE("""
+
 float a, b, c;
 float ux, uy, uz;
 float vx, vy, vz;
 float wx, wy, wz;
+
+Vector3 xHat = new Vector3(1,0,0);
+Vector3 yHat = new Vector3(0,1,0);
+Vector3 zHat = new Vector3(0,0,1);
+Vector3 BasisXYZ[3] = {xHat, yHat, zHat};
+
 Vector3  ABC = new Vector3( a, b, c);
 Vector3 uHat = new Vector3(ux,uy,uz);
 Vector3 vHat = new Vector3(vx,vy,vz);
 Vector3 wHat = new Vector3(wx,wy,wz);
-Vector3 Basis = {uHat, vHat, wHat};
+Vector3 BasisUVW[3] = {uHat, vHat, wHat};
 
 Vector3 dot3(Vector3[] basis, Vector3 coord)
 {
@@ -800,19 +817,26 @@ Vector3 dot3(Vector3[] basis, Vector3 coord)
         result += basis[n] * coord[n];
     return result;
 }
-                     
-Vector3 X = dot3(Basis, ABC);
+
+Assert(
+    uHat*a + vHat*b + wHat*c == 
+    dot3(BasisXYZ, dot3(BasisUVW, ABC))
+);
 """),
     python=MULTILINE("""
 vec = lambda *args: np.array([*args], dtype=np.float64)
 All = np.all
 
+xHat = vec(1,0,0);
+yHat = vec(0,1,0);
+zHat = vec(0,0,1);
+BasisXYZ = vec(xHat, yHat, zHat);
+
 ABC  = vec( a, b, c);
 uHat = vec(ux,uy,uz);
 vHat = vec(vx,vy,vz);
 wHat = vec(wx,wy,wz);
-
-Basis = vec(uHat, vHat, wHat)
+BasisUVW = vec(uHat, vHat, wHat);
 
 def dot3(basis, coord):
     result = basis[0] * 0.0
@@ -820,7 +844,10 @@ def dot3(basis, coord):
         result += basis[n] * coord[n]
     return result
 
-X = dot3(Basis, ABC)
+assert All(
+    uHat*a + vHat*b + wHat*c == 
+    dot3(BasisXYZ, dot3(BasisUVW, ABC))
+)
 """)
 )
 

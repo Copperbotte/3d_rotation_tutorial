@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.6.10)  11 JUN 2025 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -163,7 +163,8 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box55
 )
-No file render_0016.aux.
+(D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation_tutorial\tex_cach
+e\render_0016.aux)
 \openout1 = `render_0016.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -180,6 +181,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 
@@ -207,23 +209,20 @@ L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2834 strings out of 473535
- 44815 string characters out of 5715903
- 452420 words of memory out of 5000000
- 26059 multiletter control sequences out of 15000+600000
+ 2835 strings out of 473535
+ 44975 string characters out of 5715903
+ 437411 words of memory out of 5000000
+ 26058 multiletter control sequences out of 15000+600000
  559291 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,71p,272b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,4n,71p,235b,96s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
+mi10.pfb><C:/Users/Joe/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr10.pfb>
 Output written on "D:\My Drive\Python Scripts\2025_Summer\Moonworks_3d_rotation
-_tutorial\tex_cache\render_0016.pdf" (1 page, 47722 bytes).
+_tutorial\tex_cache\render_0016.pdf" (1 page, 18523 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

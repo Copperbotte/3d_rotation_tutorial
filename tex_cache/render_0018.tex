@@ -1,0 +1,23 @@
+\documentclass[preview]{standalone}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\begin{document}
+
+$$\vec{X} = \textcolor{red}{\hat{x}}\cdot \textcolor{red}{x} + \textcolor{green}{\hat{y}}\cdot \textcolor{green}{y} + \textcolor{cyan}{\hat{z}}\cdot \textcolor{cyan}{z}$$
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix}$$
+$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} =
+\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{magenta}{a} +
+\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{orange}{b} +
+\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}\textcolor{yellow}{c}$$
+$$\begin{bmatrix}\textcolor{red}{x}\\\textcolor{green}{y}\\\textcolor{cyan}{z}\end{bmatrix} = \begin{bmatrix}
+\begin{bmatrix}\textcolor{magenta}{u}_{\textcolor{red}{x}}\\\textcolor{magenta}{u}_{\textcolor{green}{y}}\\\textcolor{magenta}{u}_{\textcolor{cyan}{z}}\end{bmatrix} &
+\begin{bmatrix}\textcolor{orange}{v}_{\textcolor{red}{x}}\\\textcolor{orange}{v}_{\textcolor{green}{y}}\\\textcolor{orange}{v}_{\textcolor{cyan}{z}}\end{bmatrix} &
+\begin{bmatrix}\textcolor{yellow}{w}_{\textcolor{red}{x}}\\\textcolor{yellow}{w}_{\textcolor{green}{y}}\\\textcolor{yellow}{w}_{\textcolor{cyan}{z}}\end{bmatrix}
+\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
+$$\vec{X} = \begin{bmatrix}\textcolor{red}{\hat{x}}&\textcolor{green}{\hat{y}}&\textcolor{cyan}{\hat{z}}\end{bmatrix}\begin{bmatrix}
+\textcolor{magenta}{u}_{\textcolor{red}{x}}&\textcolor{orange}{v}_{\textcolor{red}{x}}&\textcolor{yellow}{w}_{\textcolor{red}{x}}\\
+\textcolor{magenta}{u}_{\textcolor{green}{y}}&\textcolor{orange}{v}_{\textcolor{green}{y}}&\textcolor{yellow}{w}_{\textcolor{green}{y}}\\
+\textcolor{magenta}{u}_{\textcolor{cyan}{z}}&\textcolor{orange}{v}_{\textcolor{cyan}{z}}&\textcolor{yellow}{w}_{\textcolor{cyan}{z}}
+\end{bmatrix}\begin{bmatrix}\textcolor{magenta}{a}\\\textcolor{orange}{b}\\\textcolor{yellow}{c}\end{bmatrix}$$
+
+\end{document}
