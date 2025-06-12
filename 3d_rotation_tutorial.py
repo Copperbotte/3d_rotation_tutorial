@@ -211,13 +211,13 @@ def MATHSUB(math):
     commands = {
         r"\pwrap{#1}": r"\left(#1\right)",
         r"\bwrap{#1}": r"\left[#1\right]",
-        r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",    # Colors used in my demo, oklab max saturation colors, default colors
-        r"\colorX{#1}" : r"\textcolor[HTML]{f59789}{#1}",        # FF0000, f59789, red
-        r"\colorY{#1}" : r"\textcolor[HTML]{7dc98c}{#1}",        # 00FF00, 7dc98c, green
-        r"\colorZ{#1}" : r"\textcolor[HTML]{96b1fe}{#1}",        # 007FFF, 96b1fe, cyan  
-        r"\colorU{#1}" : r"\textcolor[HTML]{d2b057}{#1}",        # 00FF7F, d2b057, magenta
-        r"\colorV{#1}" : r"\textcolor[HTML]{43c8dc}{#1}",        # FF00FF, 43c8dc, orange
-        r"\colorW{#1}" : r"\textcolor[HTML]{dd99d8}{#1}",        # FFFF00, dd99d8, yellow
+        r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",    # Colors used in my demo, oklab max saturation colors, oklab with deviation, default colors
+        r"\colorX{#1}" : r"\textcolor[HTML]{fea294}{#1}",        # FF0000, f59789, fea294, red
+        r"\colorY{#1}" : r"\textcolor[HTML]{81cb8f}{#1}",        # 00FF00, 7dc98c, 81cb8f, green
+        r"\colorZ{#1}" : r"\textcolor[HTML]{91abf6}{#1}",        # 007FFF, 96b1fe, 91abf6, cyan  
+        r"\colorU{#1}" : r"\textcolor[HTML]{d7b760}{#1}",        # 00FF7F, d2b057, d7b760, magenta
+        r"\colorV{#1}" : r"\textcolor[HTML]{46c6d9}{#1}",        # FF00FF, 43c8dc, 46c6d9, orange
+        r"\colorW{#1}" : r"\textcolor[HTML]{d290cd}{#1}",        # FFFF00, dd99d8, d290cd, yellow
     }
 
     def bs_fltr(s):
