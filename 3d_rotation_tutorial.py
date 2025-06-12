@@ -152,9 +152,9 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     if inline:
         #return f' ![{svg}]({svg}) '
         #return f'<img src="{svg}" style="vertical-align: middle; display: inline-block;"/>'
-        #return f'<img src="{svg}" style="height=1em; vertical-align: -1.5em; display: inline-block;"/>'
+        return f'<img src="{svg}" style="height=1em; vertical-align: -1.5em; display: inline-block;"/>'
         #return f' <img src="{svg}" style="display: inline-block;"/> '
-        return f' ![]({svg}) '
+        #return f' ![]({svg}) '
         result = f"""<div style="display: inline-block;"> 
 
 <img src="{svg}"/>
