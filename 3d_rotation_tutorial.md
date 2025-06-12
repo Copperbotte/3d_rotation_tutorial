@@ -413,10 +413,10 @@ Assert(
 </div>
 
 Those *constant* objects are the "standard" basis vectors for Euclidean space, which represent the directions each variable grows in.  They're the gizmos you'll see in 3d editors!  They're usually represented mathematically with a 
-    
-    ![./tex_cache/render_0007.svg](./tex_cache/render_0007.svg) 
-    
-     notation:<table align="center">
+
+![./tex_cache/render_0007.svg](./tex_cache/render_0007.svg)
+
+ notation:<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
@@ -573,22 +573,22 @@ Now here's the kicker: Those new basis vectors are *still vectors,* so they're l
 ![./tex_cache/render_0011.svg](./tex_cache/render_0011.svg)
 
 </div>Since the coordinate 
-    
-    ![./tex_cache/render_0012.svg](./tex_cache/render_0012.svg) 
-    
-     are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:<div align="center"> 
+
+![./tex_cache/render_0012.svg](./tex_cache/render_0012.svg)
+
+ are all floats, we can group them with the coordinates. And since all the basis vectors are the same, we can rearrange the terms of the dot products to find this:<div align="center"> 
 
 ![./tex_cache/render_0013.svg](./tex_cache/render_0013.svg)
 
 </div>Notice how the resulting sum in the parenthesis is a coordinate! Despite this, it also has the characteristic form of a second dot product.  If we package it as such, with the coordinate 
-    
-    ![./tex_cache/render_0014.svg](./tex_cache/render_0014.svg) 
-    
-     becoming a column vector like 
-    
-    ![./tex_cache/render_0015.svg](./tex_cache/render_0015.svg) 
-    
-     then we find the familiar face of a Matrix!<table align="center">
+
+![./tex_cache/render_0014.svg](./tex_cache/render_0014.svg)
+
+ becoming a column vector like 
+
+![./tex_cache/render_0015.svg](./tex_cache/render_0015.svg)
+
+ then we find the familiar face of a Matrix!<table align="center">
 <tr><td>Mathematics</td> <td>C#</td></tr>
 <tr>
 <td>
