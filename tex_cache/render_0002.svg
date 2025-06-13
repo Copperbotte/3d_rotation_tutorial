@@ -21,6 +21,10 @@
   --colorV: #00717c;
   --colorW: #866a38;
   }
+  text {
+    stroke: #000000;
+    stroke-width: 0.5;
+  }
     @media (prefers-color-scheme: dark)
     {
     :root {
@@ -34,7 +38,10 @@
     svg {
         color: white;
     }
+    text {
+      stroke-width: 0;
     }
+  }
 </style>
   <sodipodi:namedview
      id="namedview609"

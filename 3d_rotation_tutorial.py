@@ -174,6 +174,10 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
 :root {
 %s
   }
+  text {
+    stroke: #000000;
+    stroke-width: 0.5;
+  }
     @media (prefers-color-scheme: dark)
     {
     :root {
@@ -182,7 +186,10 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
     svg {
         color: white;
     }
+    text {
+      stroke-width: 0;
     }
+  }
 </style>"""%(liteblock, darkblock)
         # Insert just after opening <svg> tag
         ind = svg_text.index("<svg")
