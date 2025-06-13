@@ -14,22 +14,22 @@
    xmlns:svg="http://www.w3.org/2000/svg">
 <style>
 :root {
-  --colorX: #f49586;
-  --colorY: #73c182;
-  --colorZ: #87a1ef;
-  --colorU: #cdab4e;
-  --colorV: #2abcd0;
-  --colorW: #ca86c6;
+  --colorX: #fe9186;
+  --colorY: #93e2a5;
+  --colorZ: #77a2eb;
+  --colorU: #00cfe2;
+  --colorV: #c985c2;
+  --colorW: #f2c26d;
   }
     @media (prefers-color-scheme: dark)
     {
     :root {
-      --colorX: #f9a598;
-      --colorY: #87c993;
-      --colorZ: #94acef;
-      --colorU: #d4b76b;
-      --colorV: #58c4d5;
-      --colorW: #ce93ca;
+      --colorX: #fe9186;
+      --colorY: #93e2a5;
+      --colorZ: #77a2eb;
+      --colorU: #00cfe2;
+      --colorV: #c985c2;
+      --colorW: #f2c26d;
     }
     svg {
         color: white;

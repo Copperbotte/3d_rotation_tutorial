@@ -138,19 +138,26 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
             svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
 
 
-        lite_colorX = "#f49586"
-        lite_colorY = "#73c182"
-        lite_colorZ = "#87a1ef"
-        lite_colorU = "#cdab4e"
-        lite_colorV = "#2abcd0"
-        lite_colorW = "#ca86c6"
+        # lite_colorX = "#f49586"
+        # lite_colorY = "#73c182"
+        # lite_colorZ = "#87a1ef"
+        # lite_colorU = "#cdab4e"
+        # lite_colorV = "#2abcd0"
+        # lite_colorW = "#ca86c6"
+        # 
+        # dark_colorX = "#f9a598"
+        # dark_colorY = "#87c993"
+        # dark_colorZ = "#94acef"
+        # dark_colorU = "#d4b76b"
+        # dark_colorV = "#58c4d5"
+        # dark_colorW = "#ce93ca"
 
-        dark_colorX = "#f9a598"
-        dark_colorY = "#87c993"
-        dark_colorZ = "#94acef"
-        dark_colorU = "#d4b76b"
-        dark_colorV = "#58c4d5"
-        dark_colorW = "#ce93ca"
+        dark_colorX = lite_colorX = "#fe9186"
+        dark_colorY = lite_colorY = "#93e2a5"
+        dark_colorZ = lite_colorZ = "#77a2eb"
+        dark_colorU = lite_colorU = "#00cfe2"
+        dark_colorV = lite_colorV = "#c985c2"
+        dark_colorW = lite_colorW = "#f2c26d"
 
         liteblock = f"""
   --colorX: {lite_colorX};
