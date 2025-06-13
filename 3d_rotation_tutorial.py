@@ -74,11 +74,11 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         o.write(TEX_OUTPUT)
     
     if True:
-        #Call(cmd1, silence=True)
-        #print('#'*80)
-        #Call(cmd2, silence=True)
-        #print('#'*80)
-        #Call(cmd3, silence=True)
+        Call(cmd1, silence=True)
+        print('#'*80)
+        Call(cmd2, silence=True)
+        print('#'*80)
+        Call(cmd3, silence=True)
         #print('#'*80)
         #Call(cmd4, silence=True)
 
@@ -138,12 +138,12 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
             svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
 
 
-        lite_colorX = "#8d4d47" # "#f49586"
-        lite_colorY = "#3e5781" # "#73c182"
-        lite_colorZ = "#4e7c59" # "#87a1ef"
-        lite_colorU = "#6e4769" # "#cdab4e"
-        lite_colorV = "#00717c" # "#2abcd0"
-        lite_colorW = "#866a38" # "#ca86c6"
+        lite_colorX = "#c97169" # "#8d4d47" # "#f49586"
+        lite_colorY = "#72b281" # "#3e5781" # "#73c182"
+        lite_colorZ = "#5c7fb9" # "#4e7c59" # "#87a1ef"
+        lite_colorU = "#00a3b2" # "#6e4769" # "#cdab4e"
+        lite_colorV = "#9e6898" # "#00717c" # "#2abcd0"
+        lite_colorW = "#bf9854" # "#866a38" # "#ca86c6"
 
         dark_colorX =  "#fe9186" # "#f9a598"
         dark_colorY =  "#93e2a5" # "#87c993"

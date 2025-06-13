@@ -14,12 +14,12 @@
    xmlns:svg="http://www.w3.org/2000/svg">
 <style>
 :root {
-  --colorX: #8d4d47;
-  --colorY: #3e5781;
-  --colorZ: #4e7c59;
-  --colorU: #6e4769;
-  --colorV: #00717c;
-  --colorW: #866a38;
+  --colorX: #c97169;
+  --colorY: #72b281;
+  --colorZ: #5c7fb9;
+  --colorU: #00a3b2;
+  --colorV: #9e6898;
+  --colorW: #bf9854;
   }
   text {
     stroke: #000000;
