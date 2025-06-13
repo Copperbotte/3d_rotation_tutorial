@@ -5,6 +5,22 @@
 #     This script builds the given markdown file with functional tables, as
 # opposed to the expected human readable .md file.
 
+# Max saturation at that funky angle
+lite_colorX = "#fe5e56" #"#fe5e56" # "#8d4d47" # "#f49586"
+lite_colorY = "#00ef75" #"#00ef75" # "#3e5781" # "#73c182"
+lite_colorZ = "#0069fe" #"#0069fe" # "#4e7c59" # "#87a1ef"
+lite_colorU = "#efac00" #"#00b4c4" # "#6e4769" # "#cdab4e"
+lite_colorV = "#00b4c4" #"#ba00b2" # "#00717c" # "#2abcd0"
+lite_colorW = "#ba00b2" #"#efac00" # "#866a38" # "#ca86c6"
+
+# Uniform Luminance with Deviation
+dark_colorX =  "#fe9186" # "#f9a598"
+dark_colorY =  "#93e2a5" # "#87c993"
+dark_colorZ =  "#77a2eb" # "#94acef"
+dark_colorU =  "#f2c26d" # "#d4b76b"
+dark_colorV =  "#00cfe2" # "#58c4d5"
+dark_colorW =  "#c985c2" # "#ce93ca"
+
 import subprocess as sp
 # Prints a line ran through a subprocess how you expect it to work!
 def Call(command, getlines=False, silence=False):
@@ -127,30 +143,32 @@ def SVG_FROM_TEX(TEX_INPUT, scale=1.25, inline=False, nodiv=False):
         svg_text = re.sub(r'fill="#000000"|fill="#000"|fill="black"', 'fill="currentColor"', svg_text, flags=re.IGNORECASE)
 
         COLOR_MAP = {
-            "#FF0000": "colorX",
-            "#00FF00": "colorY",
-            "#0000FF": "colorZ",
-            "#00FFFF": "colorU",
-            "#FF00FF": "colorV",
-            "#FFFF00": "colorW",
+            # "#FF0000": "colorX",
+            # "#00FF00": "colorY",
+            # "#0000FF": "colorZ",
+            # "#00FFFF": "colorU",
+            # "#FF00FF": "colorV",
+            # "#FFFF00": "colorW",
+
+            lite_colorX: "colorX",
+            lite_colorY: "colorY",
+            lite_colorZ: "colorZ",
+            lite_colorU: "colorU",
+            lite_colorV: "colorV",
+            lite_colorW: "colorW",
         }
         for hexcode, var in COLOR_MAP.items():
             svg_text = re.sub(f'fill="{hexcode}"', f'fill="var(--{var})"', svg_text, flags=re.IGNORECASE)
 
 
-        lite_colorX = "#c97169" # "#8d4d47" # "#f49586"
-        lite_colorY = "#72b281" # "#3e5781" # "#73c182"
-        lite_colorZ = "#5c7fb9" # "#4e7c59" # "#87a1ef"
-        lite_colorU = "#00a3b2" # "#6e4769" # "#cdab4e"
-        lite_colorV = "#9e6898" # "#00717c" # "#2abcd0"
-        lite_colorW = "#bf9854" # "#866a38" # "#ca86c6"
 
-        dark_colorX =  "#fe9186" # "#f9a598"
-        dark_colorY =  "#93e2a5" # "#87c993"
-        dark_colorZ =  "#77a2eb" # "#94acef"
-        dark_colorU =  "#00cfe2" # "#d4b76b"
-        dark_colorV =  "#c985c2" # "#58c4d5"
-        dark_colorW =  "#f2c26d" # "#ce93ca"
+
+        # dark_colorX = lite_colorX
+        # dark_colorY = lite_colorY
+        # dark_colorZ = lite_colorZ
+        # dark_colorU = lite_colorU
+        # dark_colorV = lite_colorV
+        # dark_colorW = lite_colorW
 
         liteblock = f"""
   --colorX: {lite_colorX};
@@ -265,21 +283,20 @@ def MATHSUB(math):
         r"\pwrap{#1}": r"\left(#1\right)",
         r"\bwrap{#1}": r"\left[#1\right]",
         r"\mat{#1}" : r"\begin{bmatrix}#1\end{bmatrix}",    # Colors used in my demo, oklab max saturation colors, oklab with deviation, with two deviations, default colors
-        r"\colorX{#1}" : r"\textcolor[HTML]{FF0000}{#1}",        # FF0000, f59789, fea294, f9a598, red
-        r"\colorY{#1}" : r"\textcolor[HTML]{00FF00}{#1}",        # 00FF00, 7dc98c, 81cb8f, 87c993, green
-        r"\colorZ{#1}" : r"\textcolor[HTML]{0000FF}{#1}",        # 007FFF, 96b1fe, 91abf6, 94acef, cyan  
-        r"\colorU{#1}" : r"\textcolor[HTML]{00FFFF}{#1}",        # 00FF7F, d2b057, d7b760, d4b76b, magenta
-        r"\colorV{#1}" : r"\textcolor[HTML]{FF00FF}{#1}",        # FF00FF, 43c8dc, 46c6d9, 58c4d5, orange
-        r"\colorW{#1}" : r"\textcolor[HTML]{FFFF00}{#1}",        # FFFF00, dd99d8, d290cd, ce93ca, yellow
-    }
+        #r"\colorX{#1}" : r"\textcolor[HTML]{FF0000}{#1}",        # FF0000, f59789, fea294, f9a598, red
+        #r"\colorY{#1}" : r"\textcolor[HTML]{00FF00}{#1}",        # 00FF00, 7dc98c, 81cb8f, 87c993, green
+        #r"\colorZ{#1}" : r"\textcolor[HTML]{0000FF}{#1}",        # 007FFF, 96b1fe, 91abf6, 94acef, cyan  
+        #r"\colorU{#1}" : r"\textcolor[HTML]{00FFFF}{#1}",        # 00FF7F, d2b057, d7b760, d4b76b, magenta
+        #r"\colorV{#1}" : r"\textcolor[HTML]{FF00FF}{#1}",        # FF00FF, 43c8dc, 46c6d9, 58c4d5, orange
+        #r"\colorW{#1}" : r"\textcolor[HTML]{FFFF00}{#1}",        # FFFF00, dd99d8, d290cd, ce93ca, yellow
 
-    # Lightmode colors
-    #7c4c45
-    #385e3f
-    #3e4b72
-    #665528
-    #165a64
-    #5e3c5b
+        r"\colorX{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorX[1:],
+        r"\colorY{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorY[1:],
+        r"\colorZ{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorZ[1:],
+        r"\colorU{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorU[1:],
+        r"\colorV{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorV[1:],
+        r"\colorW{#1}" : r"\textcolor[HTML]{%s}{#1}"%lite_colorW[1:],
+    }
 
     def bs_fltr(s):
         keys = [r'\\', r'\{', r'\}']
